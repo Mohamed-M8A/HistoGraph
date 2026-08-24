@@ -1,0 +1,746 @@
+{
+  "RIFLE": {
+    "durationMs": 1150,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 6,
+    "lineWidth": 2.5,
+    "smokeScale": 1.6,
+    "smokeColor": "130,130,130",
+    "smokeDelayMin": 0.15,
+    "smokeDelayMax": 0.55,
+    "soundClass": "rifle",
+    "damage": {
+      "flesh": 18,
+      "metal": 5
+    },
+    "accuracy": 0.85,
+    "meta": {
+      "note": "Generic bolt-action battle rifle — representative of standard WW1-era infantry longarms like the Lee-Enfield SMLE or Mosin-Nagant M91.",
+      "era": "Generic / Multi-era",
+      "nation": "Generic"
+    }
+  },
+  "KAR98": {
+    "durationMs": 1100,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "soundClass": "rifle_bolt",
+    "damage": {
+      "flesh": 22,
+      "metal": 7
+    },
+    "accuracy": 0.82,
+    "meta": {
+      "note": "Real weapon: German Karabiner 98k, the standard Wehrmacht infantry rifle of WW2, derived from the WW1-era Gewehr 98.",
+      "era": "WW2",
+      "nation": "Germany"
+    }
+  },
+  "CARBINE_M1": {
+    "durationMs": 900,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 4,
+    "lineWidth": 2,
+    "soundClass": "rifle",
+    "damage": {
+      "flesh": 17,
+      "metal": 5
+    },
+    "accuracy": 0.82,
+    "meta": {
+      "note": "Real weapon: US M1 Carbine — lightweight semi-auto carbine issued to US support troops and officers from 1942.",
+      "era": "WW2",
+      "nation": "United States"
+    }
+  },
+  "SNIPER_SCOPED": {
+    "durationMs": 500,
+    "kind": "tracer",
+    "color": "#1565c0",
+    "smokePuffCount": 2,
+    "lineWidth": 1.2,
+    "soundClass": "sniper",
+    "damage": {
+      "flesh": 32,
+      "metal": 14
+    },
+    "audio": {
+      "roughness": 0.05
+    },
+    "accuracy": 0.95,
+    "meta": {
+      "note": "Generic scoped bolt-action sniper rifle — representative of WW2-era designated marksman rifles like the M1903A4 Springfield or Mosin-Nagant PU.",
+      "era": "Generic / WW2-present",
+      "nation": "Generic"
+    }
+  },
+  "CROSSBOW": {
+    "durationMs": 700,
+    "kind": "tracer",
+    "color": "#2e7d32",
+    "smokePuffCount": 0,
+    "lineWidth": 1.5,
+    "silent": true,
+    "soundClass": "bow",
+    "damage": {
+      "flesh": 14,
+      "metal": 1
+    },
+    "accuracy": 0.8,
+    "meta": {
+      "note": "Generic medieval European crossbow — mechanical draw gave it armor-piercing power at the cost of a slow reload.",
+      "era": "Medieval",
+      "nation": "Generic (Europe)"
+    }
+  },
+  "ARROW": {
+    "durationMs": 800,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 0,
+    "lineWidth": 1.5,
+    "silent": true,
+    "soundClass": "bow",
+    "damage": {
+      "flesh": 10,
+      "metal": 1
+    },
+    "accuracy": 0.72,
+    "meta": {
+      "note": "Generic war arrow (bodkin point) — the standard projectile fired by bows rather than a standalone weapon.",
+      "era": "Antiquity / Medieval",
+      "nation": "Generic"
+    }
+  },
+  "LONGBOW": {
+    "durationMs": 850,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 0,
+    "lineWidth": 1.5,
+    "silent": true,
+    "soundClass": "bow",
+    "damage": {
+      "flesh": 12,
+      "metal": 1
+    },
+    "accuracy": 0.7,
+    "meta": {
+      "note": "Generic representation of the English longbow, famous for its role at Crécy and Agincourt during the Hundred Years' War.",
+      "era": "Medieval",
+      "nation": "England"
+    }
+  },
+  "LUGER_P08": {
+    "durationMs": 400,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 1,
+    "lineWidth": 1,
+    "meta": {
+      "realRpm": null,
+      "class": "pistol_semi_auto",
+      "note": "Real weapon: German Pistole 08 'Luger', service pistol of the German Empire and later the Wehrmacht.",
+      "era": "WW1 / WW2",
+      "nation": "Germany"
+    },
+    "soundClass": "pistol",
+    "damage": {
+      "flesh": 11,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.03
+    },
+    "accuracy": 0.78
+  },
+  "GLOCK17": {
+    "durationMs": 350,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 1,
+    "lineWidth": 1,
+    "meta": {
+      "realRpm": null,
+      "class": "pistol_semi_auto",
+      "note": "Real weapon: Austrian Glock 17, the polymer-framed pistol that revolutionized service pistol design from 1982 onward.",
+      "era": "Modern",
+      "nation": "Austria"
+    },
+    "soundClass": "pistol",
+    "damage": {
+      "flesh": 10,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.04
+    },
+    "accuracy": 0.85
+  },
+  "DESERT_EAGLE": {
+    "durationMs": 480,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 2,
+    "lineWidth": 1.8,
+    "meta": {
+      "realRpm": null,
+      "class": "pistol_semi_auto_magnum",
+      "note": "Real weapon: IMI/Magnum Research Desert Eagle, a large-frame gas-operated magnum semi-auto pistol.",
+      "era": "Modern",
+      "nation": "United States / Israel"
+    },
+    "soundClass": "pistol_magnum",
+    "damage": {
+      "flesh": 18,
+      "metal": 5
+    },
+    "audio": {
+      "roughness": 0.22
+    },
+    "accuracy": 0.75
+  },
+  "M1_GARAND": {
+    "durationMs": 900,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "meta": {
+      "realRpm": null,
+      "class": "semi_auto_rifle",
+      "note": "Real weapon: US M1 Garand, the first standard-issue semi-automatic rifle of a major army (WW2).",
+      "era": "WW2",
+      "nation": "United States"
+    },
+    "soundClass": "rifle",
+    "damage": {
+      "flesh": 19,
+      "metal": 6
+    },
+    "accuracy": 0.83
+  },
+  "BARRETT_M82": {
+    "durationMs": 950,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 5,
+    "lineWidth": 3,
+    "meta": {
+      "realRpm": null,
+      "class": "anti_materiel_rifle_semi_auto",
+      "note": "Real weapon: US Barrett M82, a .50 BMG semi-automatic anti-materiel/long-range sniper rifle.",
+      "era": "Modern",
+      "nation": "United States"
+    },
+    "soundClass": "anti_materiel",
+    "audio": {
+      "roughness": 0.25
+    },
+    "damage": {
+      "flesh": 48,
+      "metal": 38
+    },
+    "accuracy": 0.93
+  },
+  "SVD_DRAGUNOV": {
+    "durationMs": 550,
+    "kind": "tracer",
+    "color": "#ff4444",
+    "smokePuffCount": 2,
+    "lineWidth": 1.3,
+    "soundClass": "sniper",
+    "damage": {
+      "flesh": 26,
+      "metal": 10
+    },
+    "audio": {
+      "roughness": 0.06
+    },
+    "accuracy": 0.88,
+    "meta": {
+      "class": "designated_marksman_rifle",
+      "realRpm": null,
+      "note": "Real weapon: Soviet SVD Dragunov, chambered in the full-power 7.62x54mmR round (830 m/s) — designed to extend a rifle squad's effective range to ~800m rather than serve as a dedicated ultra-long-range sniper rifle.",
+      "era": "Cold War",
+      "nation": "USSR / Russia"
+    }
+  },
+  "TABUK_SNIPER": {
+    "durationMs": 520,
+    "kind": "tracer",
+    "color": "#2e7d32",
+    "smokePuffCount": 2,
+    "lineWidth": 1.2,
+    "soundClass": "sniper",
+    "damage": {
+      "flesh": 22,
+      "metal": 8
+    },
+    "audio": {
+      "roughness": 0.06
+    },
+    "accuracy": 0.8,
+    "meta": {
+      "class": "designated_marksman_rifle",
+      "realRpm": null,
+      "note": "Real weapon: Iraqi Tabuk sniper rifle, built at the Al-Qadissiya Establishments from Zastava M76/M72 tooling bought from Yugoslavia in 1979. Unlike the SVD it was deliberately rechambered to the standard AK-pattern 7.62x39mm round (740 m/s) so it could share ammunition with Iraq's assault rifles — a real logistics-driven tradeoff that cost it range compared to the SVD's dedicated 7.62x54mmR cartridge.",
+      "era": "Cold War",
+      "nation": "Iraq"
+    }
+  },
+  "M1911": {
+    "durationMs": 420,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 1,
+    "lineWidth": 1,
+    "soundClass": "pistol",
+    "damage": {
+      "flesh": 13,
+      "metal": 3
+    },
+    "audio": {
+      "roughness": 0.05
+    },
+    "accuracy": 0.8,
+    "meta": {
+      "class": "pistol_semi_auto",
+      "realRpm": null,
+      "note": "Real weapon: US M1911, John Browning's .45 ACP single-action pistol, standard US sidearm from WW1 through the early 1980s.",
+      "era": "WW1-Cold War",
+      "nation": "United States"
+    }
+  },
+  "WALTHER_P38": {
+    "durationMs": 410,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 1,
+    "lineWidth": 1,
+    "soundClass": "pistol",
+    "damage": {
+      "flesh": 12,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.04
+    },
+    "accuracy": 0.79,
+    "meta": {
+      "class": "pistol_semi_auto",
+      "realRpm": null,
+      "note": "Real weapon: German Walther P38, adopted in 1938 to gradually replace the more expensive Luger P08 as the Wehrmacht's standard sidearm.",
+      "era": "WW2",
+      "nation": "Germany"
+    }
+  },
+  "LEE_ENFIELD": {
+    "durationMs": 1050,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "soundClass": "rifle_bolt",
+    "damage": {
+      "flesh": 20,
+      "metal": 6
+    },
+    "accuracy": 0.84,
+    "meta": {
+      "note": "Real weapon: British SMLE Lee-Enfield, standard rifle of the British Empire from 1895 into the mid-20th century, famous for a fast-cycling bolt that let trained troops achieve the 'mad minute' of aimed fire.",
+      "era": "WW1 / WW2",
+      "nation": "United Kingdom"
+    }
+  },
+  "MAUSER_C96": {
+    "durationMs": 430,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 1,
+    "lineWidth": 1.1,
+    "soundClass": "pistol",
+    "damage": {
+      "flesh": 12,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.05
+    },
+    "accuracy": 0.76,
+    "meta": {
+      "class": "pistol_semi_auto",
+      "era": "WW1",
+      "nation": "Germany",
+      "note": "Real weapon: German Mauser C96 ('Broomhandle'), one of the first successful semi-auto pistols (1896); its distinctive box magazine ahead of the trigger and wooden shoulder-stock holster made it instantly recognizable — later widely copied in China and carried by early 20th-century figures worldwide."
+    }
+  },
+  "ARISAKA_TYPE99": {
+    "durationMs": 1080,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "soundClass": "rifle_bolt",
+    "damage": {
+      "flesh": 21,
+      "metal": 6
+    },
+    "accuracy": 0.81,
+    "meta": {
+      "era": "WW2",
+      "nation": "Japan",
+      "note": "Real weapon: Arisaka Type 99, the standard Imperial Japanese Army bolt-action rifle of WW2, chambered in 7.7x58mm — some late-war examples were crudely finished ('last ditch') as Japan's industrial base collapsed."
+    }
+  },
+  "NAMBU_TYPE14": {
+    "durationMs": 410,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 1,
+    "lineWidth": 1,
+    "soundClass": "pistol",
+    "damage": {
+      "flesh": 10,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.03
+    },
+    "accuracy": 0.74,
+    "meta": {
+      "class": "pistol_semi_auto",
+      "era": "WW2",
+      "nation": "Japan",
+      "note": "Real weapon: Nambu Type 14, the standard Imperial Japanese officer's sidearm — a distinctive recoil-operated pistol notorious for a weak recoil spring and a safety that was slow to operate under stress."
+    }
+  },
+  "BROWN_BESS": {
+    "durationMs": 1200,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 9,
+    "lineWidth": 2.5,
+    "soundClass": "musket",
+    "damage": {
+      "flesh": 19,
+      "metal": 2
+    },
+    "accuracy": 0.35,
+    "meta": {
+      "era": "Napoleonic Wars",
+      "nation": "United Kingdom",
+      "realVelocity_ms": "400-550",
+      "realRpm": null,
+      "note": "Real weapon: British 'Brown Bess' flintlock musket (in service 1722-1838), the standard infantry arm across the Napoleonic Wars. Smoothbore and famously inaccurate beyond ~50-100 yards, so British doctrine relied on massed volley fire from tight ranks rather than individual marksmanship."
+    }
+  },
+  "CHARLEVILLE_MUSKET": {
+    "durationMs": 1200,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 9,
+    "lineWidth": 2.4,
+    "soundClass": "musket",
+    "damage": {
+      "flesh": 17,
+      "metal": 2
+    },
+    "accuracy": 0.36,
+    "meta": {
+      "era": "Napoleonic Wars",
+      "nation": "France",
+      "note": "Real weapon: French Charleville musket, the standard infantry arm of Napoleon's Grande Armee (and, decades earlier, of American Revolutionary War troops). Slightly smaller-caliber ball than the Brown Bess but ballistically similar in role and accuracy."
+    }
+  },
+  "BAKER_RIFLE": {
+    "durationMs": 1300,
+    "kind": "tracer",
+    "color": "#2e7d32",
+    "smokePuffCount": 7,
+    "lineWidth": 2,
+    "soundClass": "musket",
+    "damage": {
+      "flesh": 18,
+      "metal": 3
+    },
+    "accuracy": 0.72,
+    "meta": {
+      "era": "Napoleonic Wars",
+      "nation": "United Kingdom",
+      "note": "Real weapon: British Baker rifle, issued to elite units like the 95th Rifles. Its rifled barrel made it far more accurate than any smoothbore musket of the era (reportedly used to kill a French general at ~400 yards at Cacabelos in 1809) at the cost of a much slower reload."
+    }
+  },
+  "FLINTLOCK_PISTOL": {
+    "durationMs": 450,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 3,
+    "lineWidth": 1.2,
+    "soundClass": "pistol",
+    "damage": {
+      "flesh": 11,
+      "metal": 1
+    },
+    "accuracy": 0.55,
+    "meta": {
+      "era": "Napoleonic Wars",
+      "nation": "Generic (Europe)",
+      "note": "Generic Napoleonic-era cavalry/officer's flintlock pistol — single-shot, short-ranged, and often carried as a backup to the sabre rather than a primary weapon."
+    }
+  },
+  "MOSIN_NAGANT": {
+    "durationMs": 1080,
+    "kind": "tracer",
+    "color": "#ff4444",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "soundClass": "rifle_bolt",
+    "damage": {
+      "flesh": 21,
+      "metal": 6
+    },
+    "accuracy": 0.83,
+    "meta": {
+      "era": "WW1 / WW2",
+      "nation": "Russia / USSR",
+      "realVelocity_ms": 865,
+      "note": "Real weapon: Mosin-Nagant M1891, Russia and later the USSR's standard bolt-action rifle from the Russo-Japanese War through WW2 — the rifle famously used by Finnish sniper Simo Hayha, credited with over 500 confirmed kills in the Winter War."
+    }
+  },
+  "NAGANT_M1895": {
+    "durationMs": 400,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 1,
+    "lineWidth": 1,
+    "soundClass": "pistol",
+    "damage": {
+      "flesh": 9,
+      "metal": 1
+    },
+    "accuracy": 0.72,
+    "meta": {
+      "era": "WW1 / WW2",
+      "nation": "Russia / USSR",
+      "realVelocity_ms": 272,
+      "realGun": "7-shot gas-seal revolver, class pistol_revolver",
+      "note": "Real weapon: Nagant M1895 revolver, notable for a unique gas-seal cylinder that pushed the case forward into the barrel on firing — unusually low-powered for a service revolver, but remained in Soviet service into WW2."
+    }
+  },
+  "MAS36": {
+    "durationMs": 1080,
+    "kind": "tracer",
+    "color": "#1565c0",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "soundClass": "rifle_bolt",
+    "damage": {
+      "flesh": 20,
+      "metal": 6
+    },
+    "accuracy": 0.81,
+    "meta": {
+      "era": "WW2",
+      "nation": "France",
+      "note": "Real weapon: MAS-36, France's last bolt-action service rifle, adopted just before WW2 to replace the aging Lebel/Berthier family still in front-line use."
+    }
+  },
+  "CARCANO_M91": {
+    "durationMs": 1050,
+    "kind": "tracer",
+    "color": "#2e7d32",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "soundClass": "rifle_bolt",
+    "damage": {
+      "flesh": 17,
+      "metal": 5
+    },
+    "accuracy": 0.78,
+    "meta": {
+      "era": "WW2",
+      "nation": "Italy",
+      "note": "Real weapon: Carcano M91, Italy's standard infantry rifle across both World Wars — its 6.5mm cartridge was widely considered underpowered compared to contemporaries, a criticism Italian troops themselves voiced."
+    }
+  },
+  "SPRINGFIELD_M1903": {
+    "durationMs": 1080,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "soundClass": "rifle_bolt",
+    "damage": {
+      "flesh": 21,
+      "metal": 7
+    },
+    "accuracy": 0.85,
+    "meta": {
+      "era": "WW1-WW2",
+      "nation": "United States",
+      "note": "Real weapon: US M1903 Springfield, standard US infantry rifle of WW1 and still widely used as a sniper platform (M1903A4) throughout WW2 even after the M1 Garand took over general issue."
+    }
+  },
+  "WEBLEY_REVOLVER": {
+    "durationMs": 430,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 1,
+    "lineWidth": 1,
+    "soundClass": "pistol",
+    "damage": {
+      "flesh": 12,
+      "metal": 2
+    },
+    "accuracy": 0.76,
+    "meta": {
+      "era": "WW1 / WW2",
+      "nation": "United Kingdom",
+      "note": "Real weapon: Webley service revolver, the standard British/Commonwealth officer's sidearm across both World Wars, known for its simple, rugged break-action reload."
+    }
+  },
+  "ARISAKA_TYPE38": {
+    "durationMs": 1080,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "soundClass": "rifle_bolt",
+    "damage": {
+      "flesh": 18,
+      "metal": 5
+    },
+    "accuracy": 0.8,
+    "meta": {
+      "era": "WW1 (in Japanese service into WW2)",
+      "nation": "Japan",
+      "note": "Real weapon: Arisaka Type 38, the predecessor to the Type 99 already in this dataset — chambered in the smaller, milder-recoiling 6.5x50mm round rather than the Type 99's 7.7x58mm, and remained in second-line Japanese use well into WW2."
+    }
+  },
+  "M110_SASS": {
+    "durationMs": 560,
+    "kind": "tracer",
+    "color": "#2e7d32",
+    "smokePuffCount": 2,
+    "lineWidth": 1.3,
+    "soundClass": "sniper",
+    "damage": {
+      "flesh": 27,
+      "metal": 11
+    },
+    "audio": {
+      "roughness": 0.06
+    },
+    "accuracy": 0.89,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "note": "Real weapon: M110 Semi-Automatic Sniper System, the US Army's standard semi-auto designated marksman rifle, letting a DMR keep pace with a squad's advance in a way a bolt-action sniper rifle cannot."
+    }
+  },
+  "SKS": {
+    "durationMs": 950,
+    "kind": "tracer",
+    "color": "#ff4444",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "soundClass": "rifle",
+    "damage": {
+      "flesh": 17,
+      "metal": 5
+    },
+    "accuracy": 0.75,
+    "meta": {
+      "era": "Cold War",
+      "nation": "USSR",
+      "realVelocity_ms": 735,
+      "note": "Real weapon: SKS (Samozaryadny Karabin sistemy Simonova), a Soviet semi-auto carbine that predates the AK-47 — its fixed 10-round magazine and simple, rugged design made it one of the most widely distributed rifles in the world, still commonly found across conflict zones and tribal regions (including Afghanistan and Pakistan's border areas) decades after Soviet production ended."
+    }
+  },
+  "M24": {
+    "durationMs": 560,
+    "kind": "tracer",
+    "color": "#f5f5f5",
+    "smokePuffCount": 2,
+    "lineWidth": 1.3,
+    "soundClass": "sniper",
+    "damage": {
+      "flesh": 28,
+      "metal": 11
+    },
+    "audio": {
+      "roughness": 0.05
+    },
+    "accuracy": 0.9,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "note": "Real weapon: M24 Sniper Weapon System, the US Army's standard bolt-action sniper rifle since 1988 — built on a Remington 700 action in 7.62x51mm NATO, prized for consistent long-range accuracy over the higher rate of fire a semi-auto DMR like the M110 offers."
+    }
+  },
+  "AWM": {
+    "durationMs": 600,
+    "kind": "tracer",
+    "color": "#1565c0",
+    "smokePuffCount": 2,
+    "lineWidth": 1.4,
+    "soundClass": "sniper",
+    "damage": {
+      "flesh": 30,
+      "metal": 13
+    },
+    "audio": {
+      "roughness": 0.04
+    },
+    "accuracy": 0.92,
+    "meta": {
+      "era": "Modern",
+      "nation": "United Kingdom",
+      "note": "Real weapon: Accuracy International Arctic Warfare Magnum (AWM), chambered in .300 Winchester Magnum or .338 Lapua Magnum — among the most precise bolt-action sniper rifles in military service, associated with some of the longest confirmed sniper kills ever recorded by British and Canadian marksmen."
+    }
+  },
+  "MK14_EBR": {
+    "durationMs": 570,
+    "kind": "tracer",
+    "color": "#2e7d32",
+    "smokePuffCount": 3,
+    "lineWidth": 1.4,
+    "soundClass": "sniper",
+    "damage": {
+      "flesh": 27,
+      "metal": 11
+    },
+    "audio": {
+      "roughness": 0.06
+    },
+    "accuracy": 0.87,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "note": "Real weapon: Mk 14 Enhanced Battle Rifle, a modernized M14 action (7.62x51mm NATO) dropped into a modular chassis with Picatinny rails — gives special-operations DMRs the rate of fire of a semi-auto rifle without giving up the M14's full-power cartridge."
+    }
+  },
+  "KHYBER_PASS_COPY": {
+    "durationMs": 1080,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 3,
+    "lineWidth": 2,
+    "soundClass": "rifle_bolt",
+    "damage": {
+      "flesh": 16,
+      "metal": 4
+    },
+    "accuracy": 0.55,
+    "meta": {
+      "era": "19th century-present",
+      "nation": "Afghanistan / Pakistan (Khyber Pass region)",
+      "note": "Real, documented phenomenon: hand-made rifles produced by cottage gunsmiths (most famously the Adam Khel Afridi) in the Khyber Pass region straddling the Afghanistan-Pakistan border, most commonly copying British Martini-Henry and Lee-Enfield rifles using basic hand tools and scrap metal (railway rails, salvaged vehicle parts). Quality varies enormously — from nearly factory-standard to genuinely unsafe — and ammunition is often hand-loaded and underpowered, reflected here as noticeably lower accuracy and damage than a factory-made Lee-Enfield."
+    }
+  }
+}

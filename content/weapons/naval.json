@@ -1,0 +1,231 @@
+{
+  "NAVAL_GUN": {
+    "durationMs": 2400,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 210,
+    "impactRadius": 65,
+    "smokePuffCount": 24,
+    "smokeColor": "40,40,40",
+    "meta": {
+      "class": "naval_main_gun",
+      "note": "Generic large-caliber naval main gun, representative of WW2-era battleship/cruiser turret guns.",
+      "era": "WW2 (generic)",
+      "nation": "Generic"
+    },
+    "soundClass": "naval",
+    "damage": {
+      "flesh": 82,
+      "metal": 78
+    },
+    "audio": {
+      "roughness": 0.22,
+      "echo": true
+    },
+    "accuracy": 0.5
+  },
+  "NAVAL_AA": {
+    "durationMs": 1600,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 3,
+    "spreadAngle": 0.02,
+    "shotLength": 20,
+    "meta": {
+      "realRpm": 120,
+      "class": "naval_anti_air_gun",
+      "note": "Generic naval anti-aircraft gun, representative of WW2-era mounts like the Bofors 40mm.",
+      "era": "WW2 (generic)",
+      "nation": "Generic"
+    },
+    "soundClass": "naval_flak",
+    "damage": {
+      "flesh": 22,
+      "metal": 18
+    },
+    "audio": {
+      "roughness": 0.3,
+      "boomPeak": 0.65,
+      "crackDurBoost": 1.3,
+      "bodyFreq": 380,
+      "crackFreq": 1200
+    },
+    "accuracy": 0.45
+  },
+  "PHALANX_CIWS": {
+    "durationMs": 900,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 54,
+    "spreadAngle": 0.015,
+    "shotLength": 8,
+    "meta": {
+      "realRpm": 4500,
+      "class": "naval_ciws_gatling",
+      "note": "Real weapon: US Phalanx CIWS, a radar-guided 20mm rotary-cannon last line of defense against anti-ship missiles.",
+      "era": "Modern",
+      "nation": "United States"
+    },
+    "soundClass": "naval_gatling",
+    "damage": {
+      "flesh": 20,
+      "metal": 28
+    },
+    "audio": {
+      "roughness": 0.1
+    },
+    "accuracy": 0.65
+  },
+  "EXOCET": {
+    "durationMs": 1600,
+    "kind": "rocket",
+    "color": "#ff9900",
+    "arcHeight": 20,
+    "blastRadius": 55,
+    "trailCount": 12,
+    "trailColor": "rgba(200,200,210,0.55)",
+    "ringCount": 4,
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 60,
+      "metal": 88
+    },
+    "audio": {
+      "roughness": 0.16,
+      "echo": true
+    },
+    "accuracy": 0.8,
+    "meta": {
+      "era": "Modern",
+      "nation": "France",
+      "realGun": "MM38/AM39 Exocet, sea-skimming anti-ship cruise missile",
+      "note": "Real weapon: became globally famous when an Argentine air-launched Exocet sank the British destroyer HMS Sheffield during the 1982 Falklands War, despite Argentina having only a handful of missiles available."
+    }
+  },
+  "HARPOON": {
+    "durationMs": 1700,
+    "kind": "rocket",
+    "color": "#1565c0",
+    "arcHeight": 22,
+    "blastRadius": 58,
+    "trailCount": 13,
+    "trailColor": "rgba(210,210,220,0.55)",
+    "ringCount": 4,
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 62,
+      "metal": 90
+    },
+    "audio": {
+      "roughness": 0.16,
+      "echo": true
+    },
+    "accuracy": 0.82,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "realGun": "RGM/AGM-84 Harpoon, sea-skimming anti-ship cruise missile",
+      "note": "Real weapon: NATO's most widely fielded anti-ship missile, launched from ships, submarines, or aircraft, and exported to dozens of navies worldwide since the late 1970s."
+    }
+  },
+  "YAMATO_46CM": {
+    "durationMs": 2600,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 230,
+    "impactRadius": 75,
+    "smokePuffCount": 26,
+    "smokeColor": "40,40,40",
+    "soundClass": "naval",
+    "damage": {
+      "flesh": 95,
+      "metal": 92
+    },
+    "audio": {
+      "roughness": 0.25,
+      "echo": true
+    },
+    "accuracy": 0.48,
+    "meta": {
+      "era": "WW2",
+      "nation": "Japan",
+      "platform": "Yamato-class battleship",
+      "note": "Real weapon: the 46cm (18.1in) main guns of the Yamato-class battleships — the largest naval guns ever mounted on a warship, firing a shell that weighed as much as a small car."
+    }
+  },
+  "BISMARCK_38CM": {
+    "durationMs": 2450,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 215,
+    "impactRadius": 68,
+    "smokePuffCount": 24,
+    "smokeColor": "40,40,40",
+    "soundClass": "naval",
+    "damage": {
+      "flesh": 86,
+      "metal": 82
+    },
+    "audio": {
+      "roughness": 0.24,
+      "echo": true
+    },
+    "accuracy": 0.52,
+    "meta": {
+      "era": "WW2",
+      "nation": "Germany",
+      "platform": "Bismarck-class battleship",
+      "note": "Real weapon: the Bismarck's 38cm main guns, which famously sank the British battlecruiser HMS Hood with an early salvo during the 1941 Battle of the Denmark Strait — one of the most consequential single naval gunnery exchanges of the war."
+    }
+  },
+  "TOMAHAWK_CRUISE": {
+    "durationMs": 2200,
+    "kind": "rocket",
+    "color": "#f5f5f5",
+    "arcHeight": 15,
+    "blastRadius": 48,
+    "trailCount": 10,
+    "trailColor": "rgba(210,210,220,0.5)",
+    "ringCount": 3,
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 55,
+      "metal": 75
+    },
+    "audio": {
+      "roughness": 0.14,
+      "echo": true
+    },
+    "accuracy": 0.9,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "note": "Real weapon: the Tomahawk cruise missile — a long-range, low-flying, GPS/terrain-guided weapon launched from ships or submarines, one of the most precise long-range strike weapons ever fielded, hence the flat, low trajectory rather than a high arc."
+    }
+  },
+  "KALIBR": {
+    "durationMs": 2100,
+    "kind": "rocket",
+    "color": "#ff4444",
+    "arcHeight": 15,
+    "blastRadius": 48,
+    "trailCount": 10,
+    "trailColor": "rgba(210,210,220,0.5)",
+    "ringCount": 3,
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 56,
+      "metal": 76
+    },
+    "audio": {
+      "roughness": 0.14,
+      "echo": true
+    },
+    "accuracy": 0.88,
+    "meta": {
+      "era": "Modern",
+      "nation": "Russia",
+      "note": "Real weapon: the Kalibr cruise missile family, Russia's rough counterpart to the Tomahawk — ship- and submarine-launched, and gained international attention for strikes launched from the landlocked Caspian Sea flotilla."
+    }
+  }
+}

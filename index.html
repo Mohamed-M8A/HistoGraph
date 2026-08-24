@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histograph</title>
+    <link rel="stylesheet" href="assets/main.css" />
+</head>
+
+
+<body>
+    <div class="topbar">
+        <h1>Histograph</h1>
+
+        <div class="tabs">
+            <button id="tab-units-btn" class="tab-btn">Units Script</button>
+            <button id="tab-map-btn" class="tab-btn">Map Editor</button>
+        </div>
+
+        <div class="topbar-actions">
+            <button id="settings-toggle-btn" class="icon-btn" title="Settings">
+                <svg width="20" height="20"><use href="assets/icons.svg#icon-settings"></use></svg>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="main-area">
+        <div class="canvas-area">
+            <button id="fullscreen-btn" class="icon-btn canvas-float-btn" title="Toggle Fullscreen">
+                <svg width="20" height="20"><use href="assets/icons.svg#icon-fullscreen"></use></svg>
+            </button>
+            <canvas id="map-canvas" width="960" height="600"></canvas>
+        </div>
+
+
+        <div class="sidebar">
+            <div class="panel active" id="units-panel">
+                <div class="panel-inner">
+                    <div class="heading-row">
+                        <h2>Map</h2>
+                        <button type="button" class="info-btn" data-title-key="map_info_title" data-body-key="map_info_body">i</button>
+                    </div>
+
+                    <div class="field-row">
+                        <label for="seed-input">Seed</label>
+                        <input type="text" id="seed-input" placeholder="Random or number" />
+                        <button id="generate-map-btn">Generate Map</button>
+                    </div>
+
+                    <div class="field-row">
+                        <label for="upload-map-input">Upload Image</label>
+                        <input type="file" id="upload-map-input" accept="image/*" />
+                    </div>
+
+                    <div id="map-status" class="status-line"></div>
+
+
+                    <div class="heading-row section-gap">
+                        <h2>Units</h2>
+                        <button type="button" class="info-btn" data-title-key="units_info_title" data-body-key="units_info_body">i</button>
+                    </div>
+
+                    <textarea id="script-input" spellcheck="false" placeholder="Type unit commands here... e.g. T1 SPAWN 1 FR 10 10;"></textarea>
+                    
+                    <div class="field-row">
+                        <button id="load-btn">Load Script</button>
+                    </div>
+
+                    <div id="errors" class="errors-box"></div>
+
+
+                    <div class="field-row">
+                        <button id="play-btn" class="btn-with-icon">
+                            <svg width="14" height="14"><use href="assets/icons.svg#icon-play"></use></svg>
+                            <span>Play</span>
+                        </button>
+                        <button id="pause-btn" class="btn-muted btn-with-icon">
+                            <svg width="14" height="14"><use href="assets/icons.svg#icon-pause"></use></svg>
+                            <span>Pause</span>
+                        </button>
+                        <button id="reset-btn" class="btn-muted">Reset</button>
+                    </div>
+
+                    <div class="field-row" style="margin-top: 8px;">
+                        <button id="record-btn" class="btn-record">Start Recording</button>
+                    </div>
+
+                    <div id="status" class="status-line"></div>
+                </div>
+            </div>
+
+
+            <div class="panel" id="map-editor-panel">
+                <div class="panel-inner">
+                    <h2>States</h2>
+
+                    <div class="field-row">
+                        <input type="text" id="state-code-input" maxlength="5" placeholder="Code" />
+                        <input type="color" id="state-color-input" value="#0032a0" />
+                        <button id="add-state-btn">Add State</button>
+                    </div>
+
+                    <div id="states-list" class="states-list"></div>
+
+
+                    <div class="heading-row section-gap">
+                        <h3>Import</h3>
+                        <button type="button" class="info-btn" data-title-key="import_info_title" data-body-key="import_info_body">i</button>
+                    </div>
+
+                    <textarea id="import-text" class="mono-area" spellcheck="false" placeholder="STATE FR #0032a0;"></textarea>
+
+                    <div class="field-row">
+                        <button id="import-btn">Import Text</button>
+                        <label for="import-upload-input" class="inline-label">or .txt</label>
+                        <input type="file" id="import-upload-input" accept=".txt" />
+                    </div>
+
+                    <div id="import-status" class="status-line"></div>
+
+
+                    <hr class="divider" />
+
+
+                    <div class="heading-row">
+                        <h3>Paint</h3>
+                        <button type="button" class="info-btn" data-title-key="paint_info_title" data-body-key="paint_info_body">i</button>
+                    </div>
+
+                    <div class="field-row">
+                        <select id="paint-state-select"></select>
+                    </div>
+
+                    <div class="field-row">
+                        <select id="paint-shape-select">
+                            <option value="PIX">Pixel</option>
+                            <option value="RECT">Rectangle</option>
+                        </select>
+                    </div>
+
+                    <div class="field-row brush-row">
+                        <label for="paint-brush-input">Brush Size</label>
+                        <input type="range" id="paint-brush-input" min="0" max="30" value="0" />
+                        <span id="paint-brush-value" class="brush-value">0</span>
+                    </div>
+
+                    <div class="field-row">
+                        <label for="paint-tick-input">Record at Tick</label>
+                        <input type="number" id="paint-tick-input" min="1" value="1" />
+                    </div>
+
+                    <div class="field-row">
+                        <button id="paint-mode-btn" class="btn-muted">Enable Paint</button>
+                        <button id="paint-erase-btn" class="btn-muted">Erase</button>
+                    </div>
+
+
+                    <hr class="divider" />
+
+
+                    <div class="heading-row">
+                        <h3>Syntax</h3>
+                        <button type="button" class="info-btn" data-title-key="syntax_info_title" data-body-key="syntax_info_body">i</button>
+                    </div>
+
+                    <div id="syntax-output" class="syntax-output"></div>
+
+                    <div class="field-row">
+                        <button id="export-btn">Export</button>
+                        <button id="clear-map-btn" class="btn-muted">Clear Map</button>
+                    </div>
+
+
+                    <hr class="divider" />
+
+
+                    <div class="settings-row">
+                        <label for="political-opacity-input">Opacity</label>
+                        <input type="number" id="political-opacity-input" min="0" max="1" step="0.05" />
+                    </div>
+
+                    <div class="settings-row">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="political-visible-checkbox" checked />
+                            <span>Visible Overlay</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="settings-overlay" id="settings-panel">
+        <div class="settings-panel">
+            <h2>Settings</h2>
+
+            <div class="settings-row">
+                <label for="movement-mode-select">Move Mode</label>
+                <select id="movement-mode-select">
+                    <option value="relative">Relative</option>
+                    <option value="absolute">Absolute</option>
+                </select>
+            </div>
+
+            <div class="settings-row">
+                <label>Dimensions</label>
+                <div class="settings-row-inline">
+                    <input type="number" id="map-width-input" min="10" placeholder="Width" />
+                    <input type="number" id="map-height-input" min="10" placeholder="Height" />
+                </div>
+            </div>
+
+            <div class="settings-row">
+                <label for="sea-level-input">Sea Level</label>
+                <input type="number" id="sea-level-input" min="-0.3" max="0.3" step="0.02" />
+            </div>
+
+            <div class="settings-footer">
+                <button id="settings-close-btn" class="btn-muted">Close</button>
+                <button id="apply-settings-btn">Apply</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="info-overlay" id="info-overlay">
+        <div class="info-modal">
+            <h3 id="info-modal-title"></h3>
+            <p id="info-modal-body"></p>
+            <div class="settings-footer">
+                <button id="info-modal-close" class="btn-muted">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="core/main.js"></script>
+</body>
+</html>

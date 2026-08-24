@@ -1,0 +1,319 @@
+{
+  "BOMB": {
+    "durationMs": 1500,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 250,
+    "impactRadius": 80,
+    "smokePuffCount": 25,
+    "smokeColor": "40,40,40",
+    "soundClass": "bomb_drop",
+    "audio": {
+      "roughness": 0.35,
+      "echo": true,
+      "crackBoost": 2.0
+    },
+    "damage": {
+      "flesh": 85,
+      "metal": 70
+    },
+    "accuracy": 0.5,
+    "meta": {
+      "note": "Generic unguided aerial gravity bomb, representative of WW2-era 'dumb bombs'.",
+      "era": "WW2 (generic)",
+      "nation": "Generic"
+    }
+  },
+  "DRONE_STRIKE": {
+    "durationMs": 1400,
+    "kind": "drone",
+    "color": "#1565c0",
+    "bodyColor": "#2b2b2b",
+    "blastRadius": 50,
+    "ringCount": 4,
+    "approach": 0.7,
+    "meta": {
+      "class": "loitering_munition",
+      "note": "Generic loitering munition ('kamikaze drone'), representative of modern systems like the Switchblade.",
+      "era": "Modern (generic)",
+      "nation": "Generic"
+    },
+    "soundClass": "drone",
+    "damage": {
+      "flesh": 47,
+      "metal": 42
+    },
+    "audio": {
+      "roughness": 0.15
+    },
+    "accuracy": 0.85
+  },
+  "SWITCHBLADE": {
+    "durationMs": 1300,
+    "kind": "drone",
+    "color": "#f5f5f5",
+    "bodyColor": "#3a3a3a",
+    "blastRadius": 20,
+    "ringCount": 3,
+    "approach": 0.75,
+    "meta": {
+      "class": "loitering_munition",
+      "nation": "United States",
+      "note": "Real weapon: AeroVironment Switchblade, a backpack-portable 'kamikaze drone' first used in Afghanistan; its small warhead is optimized against personnel and light vehicles rather than armor, hence the much lower blast radius than the dataset's generic DRONE_STRIKE.",
+      "era": "Modern"
+    },
+    "soundClass": "drone",
+    "damage": {
+      "flesh": 38,
+      "metal": 20
+    },
+    "audio": {
+      "roughness": 0.13
+    },
+    "accuracy": 0.82
+  },
+  "LANCET": {
+    "durationMs": 1500,
+    "kind": "drone",
+    "color": "#ff4444",
+    "bodyColor": "#2b2b2b",
+    "blastRadius": 25,
+    "ringCount": 3,
+    "approach": 0.72,
+    "meta": {
+      "class": "loitering_munition",
+      "nation": "Russia",
+      "note": "Real weapon: ZALA Lancet, a Russian loitering munition that became prominent in the Russo-Ukrainian War for picking off artillery pieces and armored vehicles, hence a higher metal-vs-flesh damage split than the anti-personnel-oriented Switchblade.",
+      "era": "Modern"
+    },
+    "soundClass": "drone",
+    "damage": {
+      "flesh": 40,
+      "metal": 48
+    },
+    "audio": {
+      "roughness": 0.14
+    },
+    "accuracy": 0.8
+  },
+  "BAYRAKTAR_TB2": {
+    "durationMs": 1600,
+    "kind": "drone",
+    "color": "#ff9900",
+    "bodyColor": "#3a3a3a",
+    "blastRadius": 30,
+    "ringCount": 4,
+    "approach": 0.6,
+    "soundClass": "drone",
+    "damage": {
+      "flesh": 44,
+      "metal": 40
+    },
+    "audio": {
+      "roughness": 0.14
+    },
+    "accuracy": 0.83,
+    "meta": {
+      "era": "Modern",
+      "nation": "Turkey",
+      "realGun": "Bayraktar TB2, medium-altitude long-endurance (MALE) armed reconnaissance drone",
+      "note": "Real weapon: unlike a loitering munition, the TB2 is reusable — it carries and releases small laser-guided smart munitions (MAM-L/MAM-C) and returns to base, and proved highly influential in conflicts in Nagorno-Karabakh, Libya, and Ukraine."
+    }
+  },
+  "SHAHED_136": {
+    "durationMs": 1800,
+    "kind": "drone",
+    "color": "#ff4444",
+    "bodyColor": "#2b2b2b",
+    "blastRadius": 32,
+    "ringCount": 4,
+    "approach": 0.65,
+    "soundClass": "drone",
+    "damage": {
+      "flesh": 42,
+      "metal": 38
+    },
+    "audio": {
+      "roughness": 0.2
+    },
+    "accuracy": 0.7,
+    "meta": {
+      "era": "Modern",
+      "nation": "Iran",
+      "realGun": "Shahed-136, delta-wing one-way attack ('kamikaze') drone",
+      "note": "Real weapon: a low-cost, mass-producible loitering munition with a distinctive moped-like engine buzz, launched in swarms rather than individually — its low unit cost rather than precision is its main tactical advantage, reflected here as lower accuracy than purpose-built precision loitering munitions."
+    }
+  },
+  "STINGER": {
+    "durationMs": 1200,
+    "kind": "rocket",
+    "color": "#f5f5f5",
+    "arcHeight": 60,
+    "blastRadius": 18,
+    "trailCount": 10,
+    "trailColor": "rgba(220,220,230,0.6)",
+    "ringCount": 3,
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 30,
+      "metal": 55
+    },
+    "audio": {
+      "roughness": 0.13
+    },
+    "accuracy": 0.85,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "realGun": "FIM-92 Stinger, man-portable infrared-guided surface-to-air missile (MANPADS)",
+      "note": "Real weapon: became famous when the CIA supplied Stinger missiles to Afghan Mujahideen in the 1980s, where they neutralized the previously dominant Soviet helicopter gunships — the metal-vs-flesh split here reflects its role as an anti-aircraft, not anti-personnel, weapon."
+    }
+  },
+  "MG151_20MM": {
+    "durationMs": 1000,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 16,
+    "spreadAngle": 0.018,
+    "shotLength": 10,
+    "soundClass": "aircraft_cannon",
+    "damage": {
+      "flesh": 20,
+      "metal": 16
+    },
+    "meta": {
+      "era": "WW2",
+      "nation": "Germany",
+      "realRpm": 700,
+      "class": "aircraft_autocannon",
+      "note": "Real weapon: MG 151/20, a 20mm autocannon fitted to German fighters like the Bf 109 and Fw 190 — heavier hitting than a rifle-caliber machine gun, giving fighters a real chance of downing bombers in single passes."
+    },
+    "audio": {
+      "roughness": 0.24,
+      "boomPeak": 0.5
+    },
+    "accuracy": 0.6
+  },
+  "HISPANO_20MM": {
+    "durationMs": 1000,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 15,
+    "spreadAngle": 0.018,
+    "shotLength": 10,
+    "soundClass": "aircraft_cannon",
+    "damage": {
+      "flesh": 19,
+      "metal": 15
+    },
+    "meta": {
+      "era": "WW2",
+      "nation": "United Kingdom",
+      "realRpm": 600,
+      "class": "aircraft_autocannon",
+      "note": "Real weapon: the Hispano 20mm cannon, which replaced rifle-caliber Browning machine guns on late-war Spitfires and Hurricanes once reliability issues with early mountings were solved."
+    },
+    "audio": {
+      "roughness": 0.22,
+      "boomPeak": 0.48
+    },
+    "accuracy": 0.6
+  },
+  "M61_VULCAN": {
+    "durationMs": 800,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 60,
+    "spreadAngle": 0.02,
+    "shotLength": 9,
+    "soundClass": "gatling",
+    "damage": {
+      "flesh": 18,
+      "metal": 20
+    },
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "realRpm": 6000,
+      "class": "aircraft_autocannon",
+      "note": "Real weapon: M61 Vulcan, a 6-barrel rotary 20mm cannon that has been the standard internal gun on US fighter jets since the Vietnam era — a direct technological descendant of the 19th-century Gatling gun already in this dataset."
+    },
+    "audio": {
+      "roughness": 0.2
+    },
+    "accuracy": 0.55
+  },
+  "AIM9_SIDEWINDER": {
+    "durationMs": 1000,
+    "kind": "rocket",
+    "color": "#f5f5f5",
+    "arcHeight": 15,
+    "blastRadius": 15,
+    "trailCount": 8,
+    "trailColor": "rgba(220,220,230,0.6)",
+    "ringCount": 2,
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 5,
+      "metal": 60
+    },
+    "audio": {
+      "roughness": 0.1
+    },
+    "accuracy": 0.85,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "note": "Real weapon: AIM-9 Sidewinder, first fired in combat during the 1958 Taiwan Strait Crisis — an infrared-guided air-to-air missile whose basic 'heat-seeking' concept remains the ancestor of most short-range air-to-air missiles still in service."
+    }
+  },
+  "JDAM": {
+    "durationMs": 1450,
+    "kind": "arc",
+    "color": "#f5f5f5",
+    "arcHeight": 240,
+    "impactRadius": 55,
+    "smokePuffCount": 20,
+    "smokeColor": "40,40,40",
+    "soundClass": "bomb_drop",
+    "damage": {
+      "flesh": 80,
+      "metal": 68
+    },
+    "audio": {
+      "roughness": 0.34,
+      "echo": true,
+      "crackBoost": 1.8
+    },
+    "accuracy": 0.9,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "note": "Real weapon: JDAM (Joint Direct Attack Munition), a GPS guidance-and-fins kit bolted onto an otherwise unguided 'dumb' bomb — a cheap way to turn the generic BOMB already in this dataset into a precision-guided weapon, reflected here as a large jump in accuracy for similar destructive power."
+    }
+  },
+  "HELLFIRE_MISSILE": {
+    "durationMs": 1200,
+    "kind": "rocket",
+    "color": "#ff9900",
+    "arcHeight": 30,
+    "blastRadius": 35,
+    "trailCount": 9,
+    "trailColor": "rgba(200,200,210,0.6)",
+    "ringCount": 3,
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 50,
+      "metal": 88
+    },
+    "audio": {
+      "roughness": 0.13
+    },
+    "accuracy": 0.88,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "note": "Real weapon: AGM-114 Hellfire, a laser/radar-guided anti-armor missile originally designed for attack helicopters and later adapted as the primary strike weapon on armed drones like the MQ-9 Reaper."
+    }
+  }
+}

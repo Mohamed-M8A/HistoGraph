@@ -1,0 +1,903 @@
+{
+  "CANNON": {
+    "durationMs": 1400,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 90,
+    "impactRadius": 26,
+    "smokePuffCount": 10,
+    "soundClass": "cannon",
+    "damage": {
+      "flesh": 52,
+      "metal": 42
+    },
+    "audio": {
+      "roughness": 0.18
+    },
+    "accuracy": 0.6,
+    "meta": {
+      "note": "Generic early muzzle-loading smoothbore cannon, representative of 16th-18th century siege and field artillery.",
+      "era": "16th-18th century",
+      "nation": "Generic"
+    }
+  },
+  "TANK_SHELL": {
+    "durationMs": 900,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 40,
+    "impactRadius": 45,
+    "smokePuffCount": 14,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 4,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.4
+    },
+    "damage": {
+      "flesh": 58,
+      "metal": 72
+    },
+    "accuracy": 0.75,
+    "meta": {
+      "note": "Generic late-WW2-era tank gun, ballistically closest to the German 8.8cm KwK 36 (Tiger I) — used as this dataset's reference point for scaling all other tank/artillery damage values.",
+      "era": "WW2 (generic baseline)",
+      "nation": "Generic"
+    }
+  },
+  "MARK_IV_6PDR": {
+    "durationMs": 1000,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 35,
+    "impactRadius": 30,
+    "smokePuffCount": 10,
+    "smokeColor": "60,60,60",
+    "projectileColor": "#333333",
+    "projectileSize": 2.6,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.3
+    },
+    "damage": {
+      "flesh": 50,
+      "metal": 32
+    },
+    "accuracy": 0.5,
+    "meta": {
+      "era": "WW1",
+      "nation": "United Kingdom",
+      "platform": "Mark IV 'Male' (Cambrai, 1917)",
+      "realGun": "QF 6-pounder 6cwt Hotchkiss, 57mm L/23",
+      "realVelocity_ms": 411,
+      "note": "World's first purpose-built tank gun; short barrel traded velocity for sponson clearance, so it relied on HE/case shot vs trenches and MGs rather than armor penetration."
+    }
+  },
+  "FT17_37MM": {
+    "durationMs": 850,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 30,
+    "impactRadius": 24,
+    "smokePuffCount": 8,
+    "smokeColor": "60,60,60",
+    "projectileColor": "#333333",
+    "projectileSize": 1.9,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.28
+    },
+    "damage": {
+      "flesh": 42,
+      "metal": 28
+    },
+    "accuracy": 0.52,
+    "meta": {
+      "era": "WW1",
+      "nation": "France",
+      "platform": "Renault FT (first tank with a fully rotating turret)",
+      "realGun": "Puteaux SA18, 37mm L/21",
+      "realVelocity_ms": 367,
+      "note": "Low-velocity infantry-support gun rather than an anti-armor weapon - WW1 tanks rarely fought other tanks."
+    }
+  },
+  "TIGER_SHELL": {
+    "durationMs": 900,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 40,
+    "impactRadius": 45,
+    "smokePuffCount": 14,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 4,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.4
+    },
+    "damage": {
+      "flesh": 58,
+      "metal": 72
+    },
+    "accuracy": 0.75,
+    "meta": {
+      "era": "WW2",
+      "nation": "Germany",
+      "platform": "Tiger I",
+      "realGun": "8.8cm KwK 36 L/56",
+      "realVelocity_ms": 930,
+      "realPenetration_mm_at_1000m_APCBC": 100,
+      "note": "Feared for its long effective range and accuracy, but its shorter L/56 barrel gave it less penetration at range than the Panther's smaller-caliber L/70 gun - caliber alone did not decide the matchup."
+    }
+  },
+  "PANTHER_SHELL": {
+    "durationMs": 850,
+    "kind": "arc",
+    "color": "#f5f5f5",
+    "arcHeight": 32,
+    "impactRadius": 44,
+    "smokePuffCount": 13,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 3.4,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.36
+    },
+    "damage": {
+      "flesh": 65,
+      "metal": 81
+    },
+    "accuracy": 0.8,
+    "meta": {
+      "era": "WW2",
+      "nation": "Germany",
+      "platform": "Panther (Panzer V)",
+      "realGun": "7.5cm KwK 42 L/70",
+      "realVelocity_ms": 935,
+      "realPenetration_mm_at_1000m_APCBC": 112,
+      "note": "The long L/70 barrel (70 calibres vs the Tiger's 56) gave the smaller 75mm round a flatter trajectory and higher penetration than the Tiger's 88mm at typical combat ranges - the historical basis for this dataset's caliber-independent damage scaling."
+    }
+  },
+  "PZ4_SHELL": {
+    "durationMs": 900,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 38,
+    "impactRadius": 40,
+    "smokePuffCount": 12,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 3.2,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.34
+    },
+    "damage": {
+      "flesh": 51,
+      "metal": 64
+    },
+    "accuracy": 0.68,
+    "meta": {
+      "era": "WW2",
+      "nation": "Germany",
+      "platform": "Panzer IV (late variants, F2 onward)",
+      "realGun": "7.5cm KwK 40 L/48",
+      "realVelocity_ms": 750,
+      "realPenetration_mm_at_1000m_APCBC": 89,
+      "note": "The Wehrmacht's mainstay medium tank gun for most of the war - a moderate-length 75mm that upgunned the Panzer IV enough to threaten Allied mediums."
+    }
+  },
+  "STUG_SHELL": {
+    "durationMs": 880,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 36,
+    "impactRadius": 40,
+    "smokePuffCount": 12,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 3.2,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.34
+    },
+    "damage": {
+      "flesh": 51,
+      "metal": 64
+    },
+    "accuracy": 0.71,
+    "meta": {
+      "era": "WW2",
+      "nation": "Germany",
+      "platform": "StuG III Ausf. G (assault gun / tank destroyer)",
+      "realGun": "7.5cm StuK 40 L/48",
+      "realVelocity_ms": 750,
+      "realPenetration_mm_at_1000m_APCBC": 89,
+      "note": "Ballistically identical to the late Panzer IV's gun; the StuG's low, turretless casemate made it an effective ambush tank-killer, reflected here as slightly higher accuracy than the PZ4 despite equal firepower."
+    }
+  },
+  "SOMUA_S35_SHELL": {
+    "durationMs": 800,
+    "kind": "arc",
+    "color": "#1565c0",
+    "arcHeight": 30,
+    "impactRadius": 34,
+    "smokePuffCount": 10,
+    "smokeColor": "50,50,50",
+    "projectileColor": "#222222",
+    "projectileSize": 2.4,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.3
+    },
+    "damage": {
+      "flesh": 42,
+      "metal": 52
+    },
+    "accuracy": 0.65,
+    "meta": {
+      "era": "WW2",
+      "nation": "France",
+      "platform": "SOMUA S35 (cavalry tank)",
+      "realGun": "47mm SA35 L/32",
+      "realVelocity_ms": 670,
+      "note": "One of the most capable tank guns of 1940 - could defeat most contemporary German armor at normal battle ranges, undone more by French doctrine and radios than by the gun itself."
+    }
+  },
+  "P40_SHELL": {
+    "durationMs": 850,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 34,
+    "impactRadius": 36,
+    "smokePuffCount": 11,
+    "smokeColor": "50,50,50",
+    "projectileColor": "#222222",
+    "projectileSize": 3.0,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.32
+    },
+    "damage": {
+      "flesh": 38,
+      "metal": 48
+    },
+    "accuracy": 0.63,
+    "meta": {
+      "era": "WW2",
+      "nation": "Italy",
+      "platform": "P26/40 heavy tank",
+      "realGun": "Cannone da 75/34 Mod. 1937",
+      "realVelocity_ms": 624,
+      "note": "Italy's best wartime tank gun, but the P40 arrived too late and in too few numbers (produced from 1943) to affect the war; earlier Italian mediums like the M13/40 carried a much weaker 47mm gun."
+    }
+  },
+  "T34_76_SHELL": {
+    "durationMs": 820,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 32,
+    "impactRadius": 36,
+    "smokePuffCount": 11,
+    "smokeColor": "50,50,50",
+    "projectileColor": "#222222",
+    "projectileSize": 2.9,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.32
+    },
+    "damage": {
+      "flesh": 41,
+      "metal": 51
+    },
+    "accuracy": 0.6,
+    "meta": {
+      "era": "WW2",
+      "nation": "USSR",
+      "platform": "T-34 (1941-42 production)",
+      "realGun": "F-34 76.2mm L/41.5",
+      "realVelocity_ms": 662,
+      "note": "Bonus addition (extra nation) - the gun that shocked the Wehrmacht in 1941; sloped armor and this reliable gun made the T-34 a generational leap even though its raw penetration lagged behind later German guns."
+    }
+  },
+  "T54_100MM": {
+    "durationMs": 780,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 28,
+    "impactRadius": 46,
+    "smokePuffCount": 14,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 3.8,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.4
+    },
+    "damage": {
+      "flesh": 60,
+      "metal": 78
+    },
+    "accuracy": 0.7,
+    "meta": {
+      "era": "Cold War",
+      "nation": "USSR",
+      "platform": "T-54/T-55 (the most-produced tank in history)",
+      "realGun": "D-10T 100mm L/53.5",
+      "realVelocity_ms": 1000,
+      "note": "Testing showed the D-10T could defeat a Panther's glacis at 1500m - a clear postwar leap in penetration over WW2-era guns, driven mainly by better ammunition and a longer barrel rather than a dramatically larger bore."
+    }
+  },
+  "M60_PATTON_105MM": {
+    "durationMs": 700,
+    "kind": "arc",
+    "color": "#f5f5f5",
+    "arcHeight": 22,
+    "impactRadius": 48,
+    "smokePuffCount": 14,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 3.6,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.42
+    },
+    "damage": {
+      "flesh": 68,
+      "metal": 88
+    },
+    "accuracy": 0.78,
+    "meta": {
+      "era": "Cold War",
+      "nation": "United States",
+      "platform": "M60 Patton",
+      "realGun": "M68 105mm L/52 (licensed derivative of the British L7)",
+      "realVelocity_ms": 1478,
+      "ammoNote": "APDS",
+      "note": "Adopted after testing against a captured Hungarian T-54A showed existing NATO 90mm guns were becoming inadequate; became the standard NATO tank gun for a generation."
+    }
+  },
+  "CENTURION_L7_105MM": {
+    "durationMs": 720,
+    "kind": "arc",
+    "color": "#1565c0",
+    "arcHeight": 24,
+    "impactRadius": 47,
+    "smokePuffCount": 14,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 3.6,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.41
+    },
+    "damage": {
+      "flesh": 67,
+      "metal": 86
+    },
+    "accuracy": 0.76,
+    "meta": {
+      "era": "Cold War",
+      "nation": "United Kingdom",
+      "platform": "Centurion (Mk.5/2 onward)",
+      "realGun": "Royal Ordnance L7 105mm L/52",
+      "realVelocity_ms": 1478,
+      "note": "The original L7 that the American M68 and German-built Leopard 1 gun were derived from; remained NATO's standard tank gun into the 1980s even after being superseded by 120mm smoothbores on newest designs."
+    }
+  },
+  "LEOPARD1_105MM": {
+    "durationMs": 700,
+    "kind": "arc",
+    "color": "#2e7d32",
+    "arcHeight": 22,
+    "impactRadius": 47,
+    "smokePuffCount": 14,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 3.6,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.41
+    },
+    "damage": {
+      "flesh": 67,
+      "metal": 87
+    },
+    "accuracy": 0.8,
+    "meta": {
+      "era": "Cold War",
+      "nation": "West Germany",
+      "platform": "Leopard 1",
+      "realGun": "L7A3 105mm L/52 (built under license)",
+      "realVelocity_ms": 1478,
+      "note": "Same L7 gun family as the Centurion and M60; the Leopard 1 favored mobility and a fast, modern fire-control system over armor thickness, reflected here as the best accuracy of the L7-family entries."
+    }
+  },
+  "T72_EARLY_125MM": {
+    "durationMs": 650,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 20,
+    "impactRadius": 50,
+    "smokePuffCount": 15,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.4,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.45
+    },
+    "damage": {
+      "flesh": 70,
+      "metal": 90
+    },
+    "accuracy": 0.68,
+    "meta": {
+      "era": "Cold War",
+      "nation": "USSR",
+      "platform": "T-72 (early Ural production)",
+      "realGun": "2A26 125mm smoothbore L/48",
+      "realVelocity_ms": 1800,
+      "ammoNote": "APFSDS",
+      "note": "The West's first look at a Soviet smoothbore 125mm - superior raw penetration to any NATO 105mm of the era via a very high-velocity fin-stabilized round, but paired with a simpler autoloader and fire-control system than Western designs, hence the lower accuracy here despite the bigger punch."
+    }
+  },
+  "TYPE59_100MM": {
+    "durationMs": 780,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 28,
+    "impactRadius": 46,
+    "smokePuffCount": 14,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 3.8,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.4
+    },
+    "damage": {
+      "flesh": 61,
+      "metal": 79
+    },
+    "accuracy": 0.71,
+    "meta": {
+      "era": "Cold War",
+      "nation": "China",
+      "platform": "Type 59 (China's first domestically-built MBT, from 1959)",
+      "realGun": "Licensed/reverse-engineered copy of the Soviet D-10T, 100mm L/53.5",
+      "realVelocity_ms": 1000,
+      "note": "Ballistically near-identical to the Soviet T-54 it was copied from, but China kept upgrading the Type 59's fire control and ammunition domestically for decades after the Sino-Soviet split, when it could no longer rely on Soviet support."
+    }
+  },
+  "IRAQI_T55_QM2_125MM": {
+    "durationMs": 700,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 24,
+    "impactRadius": 48,
+    "smokePuffCount": 15,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 4.2,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.43
+    },
+    "damage": {
+      "flesh": 66,
+      "metal": 85
+    },
+    "accuracy": 0.62,
+    "meta": {
+      "era": "Cold War",
+      "nation": "Iraq",
+      "platform": "Iraqi-modified T-55 / Type 59 ('QM2' local upgrade)",
+      "realGun": "125mm smoothbore gun + autoloader, locally retrofitted in place of the original 100mm D-10T",
+      "note": "A real, documented Iraqi field modification: rather than replace their huge T-55/Type 59 fleet outright, Iraqi arsenals rearmed some hulls with the same 125mm gun and autoloader family used on the T-72, giving an older, lighter tank a much heavier punch — at the cost of the fire-control sophistication a purpose-built 125mm tank would have, reflected here in lower accuracy than the dedicated T72_EARLY_125MM entry."
+    }
+  },
+  "IRAQI_T72_3BM9": {
+    "durationMs": 650,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 20,
+    "impactRadius": 48,
+    "smokePuffCount": 15,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.4,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.45
+    },
+    "damage": {
+      "flesh": 54,
+      "metal": 68
+    },
+    "accuracy": 0.65,
+    "meta": {
+      "era": "Cold War",
+      "nation": "Iraq",
+      "platform": "Iraqi T-72 (Ural-1 export variant)",
+      "realGun": "125mm 2A46 smoothbore, same gun as T72_EARLY_125MM",
+      "realAmmoNote": "3BM9 APFSDS — a Soviet round withdrawn from Soviet service in 1973",
+      "realPenetration_mm_at_2500m": 245,
+      "note": "Same tank and gun as the standard early T-72, but Iraq's actual wartime stocks reportedly relied on older 3BM9 APFSDS ammunition that the Soviets themselves had already retired by 1973 — a real, documented ammunition-supply gap (driven by embargoes and export restrictions) rather than any difference in the gun or vehicle itself, hence the lower damage versus T72_EARLY_125MM despite sharing the same platform."
+    }
+  },
+  "CHALLENGER2_120MM": {
+    "durationMs": 680,
+    "kind": "arc",
+    "color": "#f5f5f5",
+    "arcHeight": 20,
+    "impactRadius": 50,
+    "smokePuffCount": 15,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.2,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.44
+    },
+    "damage": {
+      "flesh": 70,
+      "metal": 92
+    },
+    "accuracy": 0.82,
+    "meta": {
+      "era": "Modern",
+      "nation": "United Kingdom",
+      "platform": "Challenger 2",
+      "realGun": "L30A1, 120mm L/55 RIFLED gun",
+      "note": "Real weapon: uniquely among modern Western MBTs, Britain kept a RIFLED 120mm gun (everyone else uses smoothbore) because it fires a heavier HESH round in addition to APFSDS — a genuine doctrinal fork, not an upgrade path other nations skipped by mistake."
+    }
+  },
+  "LECLERC_120MM": {
+    "durationMs": 640,
+    "kind": "arc",
+    "color": "#1565c0",
+    "arcHeight": 18,
+    "impactRadius": 50,
+    "smokePuffCount": 15,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.2,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.44
+    },
+    "damage": {
+      "flesh": 71,
+      "metal": 93
+    },
+    "accuracy": 0.83,
+    "meta": {
+      "era": "Modern",
+      "nation": "France",
+      "platform": "Leclerc",
+      "realGun": "CN120-26, 120mm L/52 smoothbore",
+      "note": "Real weapon: the Leclerc was the first Western tank fielded with a bustle autoloader, cutting crew to 3 and enabling one of the fastest sustained rates of fire of any modern MBT."
+    }
+  },
+  "LEOPARD2A6_120MM": {
+    "durationMs": 650,
+    "kind": "arc",
+    "color": "#2e7d32",
+    "arcHeight": 18,
+    "impactRadius": 50,
+    "smokePuffCount": 15,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.2,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.44
+    },
+    "damage": {
+      "flesh": 72,
+      "metal": 95
+    },
+    "accuracy": 0.82,
+    "meta": {
+      "era": "Modern",
+      "nation": "Germany",
+      "platform": "Leopard 2A6",
+      "realGun": "Rheinmetall L/55, 120mm smoothbore",
+      "note": "Real weapon: the A6 upgrade lengthened the standard Leopard 2 gun from L/44 to L/55 — a longer barrel that increases muzzle velocity (and therefore penetration) without changing the caliber at all, the exact same physics principle behind the Panther/Tiger comparison earlier in this dataset."
+    }
+  },
+  "M1A2_ABRAMS_120MM": {
+    "durationMs": 660,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 19,
+    "impactRadius": 50,
+    "smokePuffCount": 15,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.2,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.44
+    },
+    "damage": {
+      "flesh": 71,
+      "metal": 94
+    },
+    "accuracy": 0.83,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "platform": "M1A2 Abrams",
+      "realGun": "M256, 120mm L/44 smoothbore",
+      "note": "Real weapon: the M256 is a licensed derivative of the original Rheinmetall gun that also equipped the early Leopard 2 — the two tanks share the same gun family despite representing rival NATO tank programs."
+    }
+  },
+  "K2_BLACK_PANTHER_120MM": {
+    "durationMs": 630,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 17,
+    "impactRadius": 51,
+    "smokePuffCount": 15,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.3,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.45
+    },
+    "damage": {
+      "flesh": 72,
+      "metal": 96
+    },
+    "accuracy": 0.84,
+    "meta": {
+      "era": "Modern",
+      "nation": "South Korea",
+      "platform": "K2 Black Panther",
+      "realGun": "CN08, 120mm L/55 smoothbore",
+      "note": "Real weapon: one of the newest MBT designs in this dataset, with an autoloader and an in-arm suspension that lets the tank 'kneel' to change its firing angle — reflected here as the highest accuracy among the modern tank guns."
+    }
+  },
+  "MERKAVA4_120MM": {
+    "durationMs": 660,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 19,
+    "impactRadius": 50,
+    "smokePuffCount": 15,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.2,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.44
+    },
+    "damage": {
+      "flesh": 71,
+      "metal": 93
+    },
+    "accuracy": 0.8,
+    "meta": {
+      "era": "Modern",
+      "nation": "Israel",
+      "platform": "Merkava Mk.4",
+      "realGun": "MG253, 120mm L/44 smoothbore",
+      "note": "Real weapon: uniquely places the engine at the front of the hull rather than the rear, specifically to add an extra layer of protection for the crew — a design choice driven directly by Israel's combat experience valuing crew survivability."
+    }
+  },
+  "RAMSES_II_105MM": {
+    "durationMs": 760,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 26,
+    "impactRadius": 47,
+    "smokePuffCount": 14,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 3.7,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.41
+    },
+    "damage": {
+      "flesh": 65,
+      "metal": 84
+    },
+    "accuracy": 0.72,
+    "meta": {
+      "era": "Cold War",
+      "nation": "Egypt",
+      "platform": "Ramses II (T-54E) — Egyptian-modified T-54/55",
+      "realGun": "M68 105mm rifled gun (the same gun fitted to Egypt's own M60A3 fleet), replacing the original Soviet 100mm D-10T",
+      "note": "Real, documented program (started 1984 with US firm Teledyne Continental, ~260-425 hulls converted): the mirror image of the Iraqi QM2 upgrade in this dataset — Iraq bolted a Soviet 125mm gun onto an old T-55, Egypt bolted an American 105mm gun onto the same base tank, each choosing whichever gun matched the rest of their existing fleet's logistics."
+    }
+  },
+  "M4_SHERMAN_75MM": {
+    "durationMs": 880,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 36,
+    "impactRadius": 38,
+    "smokePuffCount": 12,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 3.0,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.34
+    },
+    "damage": {
+      "flesh": 45,
+      "metal": 52
+    },
+    "accuracy": 0.7,
+    "meta": {
+      "era": "WW2",
+      "nation": "United States",
+      "platform": "M4 Sherman",
+      "realVelocity_ms": 618,
+      "note": "Real weapon: M4 Sherman's 75mm M3 gun — reliable and produced in huge numbers, but famously under-gunned against late-war German heavy tanks like the Tiger and Panther already in this dataset, a gap Allied crews partly closed through sheer numerical superiority."
+    }
+  },
+  "T34_85_SHELL": {
+    "durationMs": 850,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 34,
+    "impactRadius": 42,
+    "smokePuffCount": 13,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 3.6,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.38
+    },
+    "damage": {
+      "flesh": 56,
+      "metal": 70
+    },
+    "accuracy": 0.68,
+    "meta": {
+      "era": "WW2",
+      "nation": "USSR",
+      "platform": "T-34/85",
+      "note": "Real weapon: the up-gunned T-34/85, fitted with an 85mm ZiS-S-53 gun from 1944 onward after the original T-34/76 (already in this dataset) proved unable to reliably defeat the frontal armor of German Tigers and Panthers."
+    }
+  },
+  "CHURCHILL_75MM": {
+    "durationMs": 900,
+    "kind": "arc",
+    "color": "#2e7d32",
+    "arcHeight": 38,
+    "impactRadius": 40,
+    "smokePuffCount": 12,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 3.2,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.35
+    },
+    "damage": {
+      "flesh": 48,
+      "metal": 58
+    },
+    "accuracy": 0.65,
+    "meta": {
+      "era": "WW2",
+      "nation": "United Kingdom",
+      "platform": "Churchill Mk.VII",
+      "note": "Real weapon: the British Churchill infantry tank — slow but very heavily armored by 1940s standards, later marks re-armed with a 75mm gun to give it a fighting chance against German armor it was otherwise built to survive rather than defeat."
+    }
+  },
+  "CHIEFTAIN_120MM": {
+    "durationMs": 700,
+    "kind": "arc",
+    "color": "#1565c0",
+    "arcHeight": 22,
+    "impactRadius": 48,
+    "smokePuffCount": 14,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.0,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.42
+    },
+    "damage": {
+      "flesh": 64,
+      "metal": 82
+    },
+    "accuracy": 0.74,
+    "meta": {
+      "era": "Cold War",
+      "nation": "United Kingdom",
+      "platform": "Chieftain Mk.5",
+      "note": "Real weapon: the Chieftain was the first NATO tank armed with a 120mm gun (the rifled L11A5) — the direct ancestor of the rifled gun tradition Britain continued into the Challenger 2 already in this dataset."
+    }
+  },
+  "IS3_HEAVY_TANK": {
+    "durationMs": 950,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 30,
+    "impactRadius": 48,
+    "smokePuffCount": 15,
+    "smokeColor": "40,40,40",
+    "projectileColor": "#222222",
+    "projectileSize": 4.1,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.4
+    },
+    "damage": {
+      "flesh": 68,
+      "metal": 80
+    },
+    "accuracy": 0.6,
+    "meta": {
+      "era": "Post-WW2 / Cold War",
+      "nation": "USSR",
+      "platform": "IS-3",
+      "note": "Real weapon: IS-3, a Soviet heavy tank with a distinctive low 'pike nose' turret; its 1945 Berlin victory parade appearance alarmed Western observers and helped drive early Cold War tank development. Its 122mm gun used slow, separately-loaded ammunition, limiting rate of fire despite its raw punch."
+    }
+  },
+  "T90_125MM": {
+    "durationMs": 650,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 19,
+    "impactRadius": 50,
+    "smokePuffCount": 15,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.3,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.45
+    },
+    "damage": {
+      "flesh": 71,
+      "metal": 91
+    },
+    "accuracy": 0.75,
+    "meta": {
+      "era": "Modern",
+      "nation": "Russia",
+      "platform": "T-90A",
+      "note": "Real weapon: T-90, Russia's main modern MBT — an evolution of the T-72 lineage (already in this dataset) with a more modern 2A46M gun, improved fire control, and explosive reactive armor."
+    }
+  },
+  "TYPE99_125MM": {
+    "durationMs": 640,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 18,
+    "impactRadius": 50,
+    "smokePuffCount": 15,
+    "smokeColor": "35,35,35",
+    "projectileColor": "#222222",
+    "projectileSize": 4.3,
+    "soundClass": "tank",
+    "audio": {
+      "roughness": 0.45
+    },
+    "damage": {
+      "flesh": 72,
+      "metal": 93
+    },
+    "accuracy": 0.78,
+    "meta": {
+      "era": "Modern",
+      "nation": "China",
+      "platform": "Type 99A",
+      "note": "Real weapon: Type 99, China's most advanced domestically-developed MBT, mounting a 125mm smoothbore gun with autoloader — completing this dataset's arc from the Type 59 (a Soviet T-54 copy) through decades of independent Chinese tank development."
+    }
+  }
+}

@@ -1,0 +1,678 @@
+{
+  "MODERN_ARTILLERY": {
+    "durationMs": 2200,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 180,
+    "impactRadius": 55,
+    "smokePuffCount": 20,
+    "smokeColor": "40,40,40",
+    "soundClass": "howitzer",
+    "damage": {
+      "flesh": 72,
+      "metal": 62
+    },
+    "audio": {
+      "roughness": 0.28,
+      "echo": true
+    },
+    "accuracy": 0.55,
+    "meta": {
+      "note": "Generic modern self-propelled howitzer, representative of systems like the M109 Paladin or PzH 2000.",
+      "era": "Modern",
+      "nation": "Generic"
+    }
+  },
+  "GRENADE": {
+    "durationMs": 1100,
+    "kind": "arc",
+    "color": "#2e7d32",
+    "arcHeight": 45,
+    "impactRadius": 35,
+    "smokePuffCount": 12,
+    "soundClass": "grenade",
+    "damage": {
+      "flesh": 36,
+      "metal": 11
+    },
+    "audio": {
+      "roughness": 0.1
+    },
+    "accuracy": 0.65,
+    "meta": {
+      "note": "Generic fragmentation hand grenade, representative of designs like the US Mk2 'pineapple' or M67.",
+      "era": "WW1-present",
+      "nation": "Generic"
+    }
+  },
+  "GRENADE_LAUNCHER": {
+    "durationMs": 700,
+    "kind": "arc",
+    "color": "#2e7d32",
+    "arcHeight": 30,
+    "impactRadius": 18,
+    "smokePuffCount": 6,
+    "soundClass": "grenade",
+    "damage": {
+      "flesh": 31,
+      "metal": 13
+    },
+    "accuracy": 0.6,
+    "meta": {
+      "note": "Generic single-shot 40mm grenade launcher, representative of the M203/M79 class.",
+      "era": "Modern (Vietnam War onward)",
+      "nation": "United States"
+    }
+  },
+  "MORTAR": {
+    "durationMs": 1800,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 220,
+    "impactRadius": 40,
+    "smokePuffCount": 16,
+    "smokeColor": "40,40,40",
+    "soundClass": "mortar",
+    "damage": {
+      "flesh": 56,
+      "metal": 36
+    },
+    "audio": {
+      "roughness": 0.16
+    },
+    "accuracy": 0.45,
+    "meta": {
+      "note": "Generic infantry mortar, representative of the widely-used 81mm/82mm class.",
+      "era": "Generic / Multi-era",
+      "nation": "Generic"
+    }
+  },
+  "HOWITZER": {
+    "durationMs": 2400,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 200,
+    "impactRadius": 60,
+    "smokePuffCount": 22,
+    "smokeColor": "40,40,40",
+    "soundClass": "howitzer",
+    "damage": {
+      "flesh": 76,
+      "metal": 66
+    },
+    "audio": {
+      "roughness": 0.25,
+      "echo": true
+    },
+    "accuracy": 0.5,
+    "meta": {
+      "note": "Generic towed field howitzer, representative of designs like the M114 or M777.",
+      "era": "Generic / Multi-era",
+      "nation": "Generic"
+    }
+  },
+  "FLAK88": {
+    "durationMs": 1000,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 130,
+    "impactRadius": 22,
+    "smokePuffCount": 10,
+    "soundClass": "flak",
+    "damage": {
+      "flesh": 42,
+      "metal": 47
+    },
+    "audio": {
+      "roughness": 0.2
+    },
+    "accuracy": 0.55,
+    "meta": {
+      "note": "Real weapon: German 8.8cm Flak 18/36/37, a dual-purpose anti-aircraft gun that also proved devastating in the anti-tank role.",
+      "era": "WW2",
+      "nation": "Germany"
+    }
+  },
+  "RPG": {
+    "durationMs": 1000,
+    "kind": "rocket",
+    "color": "#ff9900",
+    "arcHeight": 40,
+    "blastRadius": 35,
+    "trailCount": 10,
+    "trailColor": "rgba(130,130,130,0.8)",
+    "ringCount": 3,
+    "soundClass": "rocket_light",
+    "damage": {
+      "flesh": 46,
+      "metal": 56
+    },
+    "audio": {
+      "roughness": 0.15
+    },
+    "accuracy": 0.6,
+    "meta": {
+      "note": "Real weapon: Soviet RPG-7, the most widely produced anti-tank rocket-propelled grenade launcher in history.",
+      "era": "Cold War",
+      "nation": "USSR"
+    }
+  },
+  "BAZOOKA": {
+    "durationMs": 1300,
+    "kind": "rocket",
+    "color": "#ff4444",
+    "arcHeight": 60,
+    "blastRadius": 40,
+    "trailCount": 12,
+    "trailColor": "rgba(120,120,120,0.8)",
+    "ringCount": 3,
+    "soundClass": "rocket_light",
+    "damage": {
+      "flesh": 41,
+      "metal": 51
+    },
+    "audio": {
+      "roughness": 0.18
+    },
+    "accuracy": 0.58,
+    "meta": {
+      "note": "Real weapon: US M1/M9 Bazooka, the first man-portable rocket anti-tank weapon, introduced in 1942.",
+      "era": "WW2",
+      "nation": "United States"
+    }
+  },
+  "KATYUSHA": {
+    "durationMs": 1600,
+    "kind": "rocket",
+    "color": "#ff9900",
+    "arcHeight": 100,
+    "blastRadius": 55,
+    "trailCount": 16,
+    "trailColor": "rgba(200,120,80,0.7)",
+    "ringCount": 4,
+    "soundClass": "rocket_barrage",
+    "damage": {
+      "flesh": 52,
+      "metal": 32
+    },
+    "audio": {
+      "roughness": 0.2,
+      "echo": true
+    },
+    "accuracy": 0.4,
+    "meta": {
+      "note": "Real weapon: Soviet Katyusha multiple rocket launcher, feared by German troops for its saturation barrages.",
+      "era": "WW2",
+      "nation": "USSR"
+    }
+  },
+  "PANZERFAUST": {
+    "durationMs": 800,
+    "kind": "rocket",
+    "color": "#ff9900",
+    "arcHeight": 15,
+    "blastRadius": 35,
+    "trailCount": 6,
+    "trailColor": "rgba(180,180,180,0.7)",
+    "ringCount": 3,
+    "meta": {
+      "class": "disposable_anti_tank_rocket",
+      "note": "Real weapon: German Panzerfaust, a cheap disposable anti-tank weapon issued in the millions late in WW2.",
+      "era": "WW2",
+      "nation": "Germany"
+    },
+    "soundClass": "rocket_light",
+    "damage": {
+      "flesh": 36,
+      "metal": 52
+    },
+    "audio": {
+      "roughness": 0.15
+    },
+    "accuracy": 0.55
+  },
+  "JAVELIN": {
+    "durationMs": 1800,
+    "kind": "rocket",
+    "color": "#1565c0",
+    "arcHeight": 140,
+    "blastRadius": 50,
+    "trailCount": 14,
+    "trailColor": "rgba(210,210,225,0.6)",
+    "ringCount": 4,
+    "meta": {
+      "class": "guided_top_attack_missile",
+      "note": "Real weapon: US FGM-148 Javelin, a modern man-portable fire-and-forget guided anti-tank missile.",
+      "era": "Modern",
+      "nation": "United States"
+    },
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 62,
+      "metal": 92
+    },
+    "audio": {
+      "roughness": 0.12
+    },
+    "accuracy": 0.9
+  },
+  "WW1_TRENCH_MORTAR": {
+    "durationMs": 1400,
+    "kind": "arc",
+    "color": "#2e7d32",
+    "arcHeight": 140,
+    "impactRadius": 28,
+    "smokePuffCount": 10,
+    "smokeColor": "50,50,50",
+    "soundClass": "mortar",
+    "audio": {
+      "roughness": 0.14
+    },
+    "damage": {
+      "flesh": 40,
+      "metal": 22
+    },
+    "accuracy": 0.4,
+    "meta": {
+      "era": "WW1",
+      "nation": "United Kingdom / Germany (generic)",
+      "realGun": "Stokes mortar (UK) / leichter Minenwerfer (Germany), light trench mortars",
+      "note": "Crude but simple muzzle-loaded high-angle weapon used to clear trench lines at close range; short range, low accuracy, high rate of fire for its era."
+    }
+  },
+  "WW1_HEAVY_HOWITZER": {
+    "durationMs": 2600,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 230,
+    "impactRadius": 58,
+    "smokePuffCount": 22,
+    "smokeColor": "40,40,40",
+    "soundClass": "howitzer",
+    "audio": {
+      "roughness": 0.3,
+      "echo": true
+    },
+    "damage": {
+      "flesh": 68,
+      "metal": 58
+    },
+    "accuracy": 0.35,
+    "meta": {
+      "era": "WW1",
+      "nation": "Germany / United Kingdom (generic siege class)",
+      "realGun": "21 cm Mörser 16 / BL 8-inch Howitzer Mk VI class heavy siege howitzers",
+      "realVelocity_ms": 393,
+      "note": "Massive shell mass compensated for low velocity; devastating against fortifications and trench networks but poor accuracy against moving point targets."
+    }
+  },
+  "M777_HOWITZER": {
+    "durationMs": 2100,
+    "kind": "arc",
+    "color": "#f5f5f5",
+    "arcHeight": 195,
+    "impactRadius": 58,
+    "smokePuffCount": 20,
+    "smokeColor": "40,40,40",
+    "soundClass": "howitzer",
+    "damage": {
+      "flesh": 74,
+      "metal": 64
+    },
+    "audio": {
+      "roughness": 0.27,
+      "echo": true
+    },
+    "accuracy": 0.62,
+    "meta": {
+      "nation": "United Kingdom / United States",
+      "realGun": "M777, 155mm L/39 towed howitzer",
+      "realVelocity_ms": 827,
+      "note": "Real weapon: titanium construction makes it roughly half the weight of the howitzer it replaced (M198), and its digital fire-control system lets it fire GPS-guided Excalibur shells out to ~40km — the accuracy edge here reflects precision-guided ammunition, not raw explosive power.",
+      "era": "Modern"
+    }
+  },
+  "PZH2000": {
+    "durationMs": 2000,
+    "kind": "arc",
+    "color": "#ff4444",
+    "arcHeight": 190,
+    "impactRadius": 58,
+    "smokePuffCount": 20,
+    "smokeColor": "40,40,40",
+    "soundClass": "howitzer",
+    "damage": {
+      "flesh": 77,
+      "metal": 68
+    },
+    "audio": {
+      "roughness": 0.29,
+      "echo": true
+    },
+    "accuracy": 0.65,
+    "meta": {
+      "nation": "Germany",
+      "realGun": "Panzerhaubitze 2000, 155mm L/52 self-propelled howitzer",
+      "note": "Real weapon: widely considered the most advanced conventional SPG in NATO service, capable of firing 3 rounds in under 10 seconds and hitting a single target simultaneously (MRSI) — the best accuracy of this dataset's non-guided artillery.",
+      "era": "Modern"
+    }
+  },
+  "CAESAR": {
+    "durationMs": 2050,
+    "kind": "arc",
+    "color": "#1565c0",
+    "arcHeight": 192,
+    "impactRadius": 57,
+    "smokePuffCount": 19,
+    "smokeColor": "40,40,40",
+    "soundClass": "howitzer",
+    "damage": {
+      "flesh": 73,
+      "metal": 63
+    },
+    "audio": {
+      "roughness": 0.27,
+      "echo": true
+    },
+    "accuracy": 0.58,
+    "meta": {
+      "nation": "France",
+      "realGun": "CAESAR, 155mm L/52 truck-mounted self-propelled gun-howitzer",
+      "note": "Real weapon: mounts a full 155mm howitzer on a 6x6 truck chassis, trading some of a tracked SPG's protection for the ability to fire and relocate ('shoot and scoot') in well under a minute, reducing exposure to counter-battery fire.",
+      "era": "Modern"
+    }
+  },
+  "NEBELWERFER_41": {
+    "durationMs": 1500,
+    "kind": "rocket",
+    "color": "#ff9900",
+    "arcHeight": 95,
+    "blastRadius": 50,
+    "trailCount": 14,
+    "trailColor": "rgba(190,150,110,0.7)",
+    "ringCount": 4,
+    "soundClass": "rocket_barrage",
+    "damage": {
+      "flesh": 48,
+      "metal": 28
+    },
+    "audio": {
+      "roughness": 0.19,
+      "echo": true
+    },
+    "accuracy": 0.38,
+    "meta": {
+      "nation": "Germany",
+      "era": "WW2",
+      "realGun": "15cm Nebelwerfer 41, six-barreled towed rocket launcher",
+      "note": "Real weapon: nicknamed 'Moaning Minnie'/'Screaming Mimi' by Allied troops for the distinctive shriek of its rockets in flight; the direct German counterpart to the Soviet Katyusha, though shorter-ranged and fired from a smaller six-tube mount rather than a truck-mounted rack."
+    }
+  },
+  "TOS1_BURATINO": {
+    "durationMs": 1400,
+    "kind": "rocket",
+    "color": "#ff4444",
+    "arcHeight": 70,
+    "blastRadius": 65,
+    "trailCount": 18,
+    "trailColor": "rgba(220,140,60,0.75)",
+    "ringCount": 5,
+    "soundClass": "rocket_barrage",
+    "damage": {
+      "flesh": 70,
+      "metal": 40
+    },
+    "audio": {
+      "roughness": 0.24,
+      "echo": true
+    },
+    "accuracy": 0.45,
+    "meta": {
+      "nation": "Russia",
+      "realGun": "TOS-1 'Buratino', 220mm 24-tube thermobaric rocket launcher",
+      "note": "Real weapon: fires fuel-air (thermobaric) warheads that create a much larger, longer blast overpressure than a conventional HE warhead of similar size — devastating against infantry in trenches or buildings, reflected here as very high flesh damage and blast radius — but its unguided rockets have a much shorter range than conventional MRLs like the Katyusha.",
+      "era": "Modern"
+    }
+  },
+  "TYPE63_MRL": {
+    "durationMs": 1300,
+    "kind": "rocket",
+    "color": "#2e7d32",
+    "arcHeight": 85,
+    "blastRadius": 38,
+    "trailCount": 10,
+    "trailColor": "rgba(160,160,160,0.65)",
+    "ringCount": 3,
+    "soundClass": "rocket_barrage",
+    "damage": {
+      "flesh": 38,
+      "metal": 22
+    },
+    "audio": {
+      "roughness": 0.17,
+      "echo": true
+    },
+    "accuracy": 0.42,
+    "meta": {
+      "nation": "China",
+      "realGun": "Type 63, 107mm 12-tube multiple rocket launcher",
+      "note": "Real weapon: light enough to be broken down and carried by a small crew or towed by a jeep, which made it one of the most widely proliferated rocket systems in the world (including to non-state groups) — smaller rockets than the Katyusha/TOS-1 mean noticeably less damage per barrage but far greater portability.",
+      "era": "Cold War / Modern"
+    }
+  },
+  "KORNET": {
+    "durationMs": 1500,
+    "kind": "rocket",
+    "color": "#ff4444",
+    "arcHeight": 90,
+    "blastRadius": 45,
+    "trailCount": 12,
+    "trailColor": "rgba(200,200,210,0.6)",
+    "ringCount": 4,
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 58,
+      "metal": 85
+    },
+    "audio": {
+      "roughness": 0.13
+    },
+    "accuracy": 0.87,
+    "meta": {
+      "era": "Modern",
+      "nation": "Russia",
+      "realGun": "9M133 Kornet, laser-beam-riding guided ATGM",
+      "note": "Real weapon: a tripod/vehicle-launched laser-guided missile with a tandem HEAT warhead designed specifically to defeat explosive reactive armor, with an effective range far beyond unguided rockets like the RPG-7."
+    }
+  },
+  "NLAW": {
+    "durationMs": 1100,
+    "kind": "rocket",
+    "color": "#f5f5f5",
+    "arcHeight": 40,
+    "blastRadius": 38,
+    "trailCount": 9,
+    "trailColor": "rgba(210,210,220,0.6)",
+    "ringCount": 3,
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 50,
+      "metal": 78
+    },
+    "audio": {
+      "roughness": 0.12
+    },
+    "accuracy": 0.85,
+    "meta": {
+      "era": "Modern",
+      "nation": "United Kingdom / Sweden",
+      "realGun": "NLAW (Next generation Light Anti-tank Weapon)",
+      "note": "Real weapon: uses Predicted Line of Sight guidance — the operator tracks the target for a couple of seconds before firing, and the missile flies the resulting predicted path itself, requiring no guidance after launch. Became widely known for its role defending against Russian armor in 2022."
+    }
+  },
+  "GRIBEAUVAL_12PDR": {
+    "durationMs": 1600,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 70,
+    "impactRadius": 24,
+    "smokePuffCount": 12,
+    "smokeColor": "60,60,60",
+    "soundClass": "cannon",
+    "damage": {
+      "flesh": 42,
+      "metal": 30
+    },
+    "audio": {
+      "roughness": 0.2
+    },
+    "accuracy": 0.45,
+    "meta": {
+      "era": "Napoleonic Wars",
+      "nation": "France",
+      "note": "Real weapon: the Gribeauval system 12-pounder — standardized French artillery that Napoleon, an artillery officer by training, leaned on heavily; troops affectionately nicknamed the 12-pounders his 'belles filles' ('beautiful daughters')."
+    }
+  },
+  "CONGREVE_ROCKET": {
+    "durationMs": 1400,
+    "kind": "rocket",
+    "color": "#ff9900",
+    "arcHeight": 120,
+    "blastRadius": 30,
+    "trailCount": 8,
+    "trailColor": "rgba(255,180,120,0.6)",
+    "ringCount": 2,
+    "soundClass": "rocket_light",
+    "damage": {
+      "flesh": 28,
+      "metal": 12
+    },
+    "audio": {
+      "roughness": 0.16
+    },
+    "accuracy": 0.3,
+    "meta": {
+      "era": "Napoleonic Wars",
+      "nation": "United Kingdom",
+      "note": "Real weapon: the Congreve rocket, one of the first military rockets used at scale in modern warfare (bombardment of Copenhagen 1807, Battle of Leipzig 1813) — unguided and wildly inaccurate by modern standards, but psychologically terrifying against troops who had never faced rocket artillery."
+    }
+  },
+  "MILLS_BOMB": {
+    "durationMs": 1050,
+    "kind": "arc",
+    "color": "#2e7d32",
+    "arcHeight": 42,
+    "impactRadius": 32,
+    "smokePuffCount": 11,
+    "soundClass": "grenade",
+    "damage": {
+      "flesh": 34,
+      "metal": 10
+    },
+    "accuracy": 0.63,
+    "meta": {
+      "era": "WW1",
+      "nation": "United Kingdom",
+      "note": "Real weapon: the Mills bomb, the first mass-produced fragmentation hand grenade with a reliable safety lever/pin system — its segmented 'pineapple' casing shape became the template that later grenades worldwide (including the US Mk2) were visually modeled on."
+    }
+  },
+  "PANZERSCHRECK": {
+    "durationMs": 1250,
+    "kind": "rocket",
+    "color": "#ff4444",
+    "arcHeight": 55,
+    "blastRadius": 42,
+    "trailCount": 11,
+    "trailColor": "rgba(170,170,170,0.75)",
+    "ringCount": 3,
+    "soundClass": "rocket_light",
+    "damage": {
+      "flesh": 44,
+      "metal": 58
+    },
+    "audio": {
+      "roughness": 0.17
+    },
+    "accuracy": 0.57,
+    "meta": {
+      "era": "WW2",
+      "nation": "Germany",
+      "note": "Real weapon: Panzerschreck, a larger and more powerful German answer to the captured American Bazooka already in this dataset — powerful enough that the operator needed a face shield or poncho to avoid backblast burns."
+    }
+  },
+  "HIMARS": {
+    "durationMs": 1600,
+    "kind": "rocket",
+    "color": "#f5f5f5",
+    "arcHeight": 110,
+    "blastRadius": 52,
+    "trailCount": 15,
+    "trailColor": "rgba(200,200,210,0.6)",
+    "ringCount": 4,
+    "soundClass": "rocket_guided",
+    "damage": {
+      "flesh": 65,
+      "metal": 70
+    },
+    "audio": {
+      "roughness": 0.19,
+      "echo": true
+    },
+    "accuracy": 0.82,
+    "meta": {
+      "era": "Modern",
+      "nation": "United States",
+      "note": "Real weapon: HIMARS (High Mobility Artillery Rocket System), a truck-mounted GPS-guided rocket launcher whose 'shoot and scoot' mobility and precision made it globally prominent for its role in the Russo-Ukrainian War."
+    }
+  },
+  "G5_HOWITZER": {
+    "durationMs": 2350,
+    "kind": "arc",
+    "color": "#ff9900",
+    "arcHeight": 195,
+    "impactRadius": 60,
+    "smokePuffCount": 21,
+    "smokeColor": "40,40,40",
+    "soundClass": "howitzer",
+    "damage": {
+      "flesh": 75,
+      "metal": 65
+    },
+    "audio": {
+      "roughness": 0.29,
+      "echo": true
+    },
+    "accuracy": 0.63,
+    "meta": {
+      "era": "Cold War / Modern",
+      "nation": "South Africa",
+      "realVelocity_ms": 897,
+      "note": "Real weapon: G5, a 155mm towed howitzer developed almost entirely out of necessity — during the Angolan Bush War, South African forces found their WW2-era howitzers badly outranged by Soviet-supplied Katyusha rocket launchers, and an international arms embargo over apartheid meant South Africa had to design and build a solution domestically rather than buy one. The resulting long-range design (up to 50km with base-bleed ammunition) went on to influence 155mm artillery standards worldwide."
+    }
+  },
+  "PINAKA_MRL": {
+    "durationMs": 1700,
+    "kind": "rocket",
+    "color": "#ff9900",
+    "arcHeight": 105,
+    "blastRadius": 58,
+    "trailCount": 17,
+    "trailColor": "rgba(210,160,90,0.7)",
+    "ringCount": 4,
+    "soundClass": "rocket_barrage",
+    "damage": {
+      "flesh": 60,
+      "metal": 45
+    },
+    "audio": {
+      "roughness": 0.21,
+      "echo": true
+    },
+    "accuracy": 0.5,
+    "meta": {
+      "era": "Modern",
+      "nation": "India",
+      "note": "Real weapon: Pinaka, India's indigenously developed multi-barrel rocket launcher (12 tubes, able to fire a full salvo in under a minute), first proven in combat during the 1999 Kargil War and since upgraded to guided variants with ranges well beyond the original 37.5km."
+    }
+  }
+}

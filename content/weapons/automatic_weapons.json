@@ -1,0 +1,1279 @@
+{
+  "MACHINE_GUN": {
+    "durationMs": 1500,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 11,
+    "spreadAngle": 0.05,
+    "shotLength": 15,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 14,
+      "metal": 3
+    },
+    "meta": {
+      "realRpm": 550,
+      "note": "Generic early-to-mid 20th century medium machine gun class.",
+      "era": "Generic / Early-mid 20th c.",
+      "nation": "Generic"
+    },
+    "accuracy": 0.55
+  },
+  "MG42": {
+    "durationMs": 1800,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 29,
+    "spreadAngle": 0.02,
+    "shotLength": 18,
+    "soundClass": "lmg_fast",
+    "damage": {
+      "flesh": 16,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 1200,
+      "note": "Real weapon: German MG42, WW2 general-purpose machine gun nicknamed 'Hitler's buzzsaw' for its extreme rate of fire.",
+      "era": "WW2",
+      "nation": "Germany"
+    },
+    "audio": {
+      "roughness": 0.32
+    },
+    "accuracy": 0.5
+  },
+  "MAXIM": {
+    "durationMs": 2200,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 18,
+    "spreadAngle": 0.02,
+    "shotLength": 15,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 12,
+      "metal": 3
+    },
+    "meta": {
+      "realRpm": 600,
+      "note": "Real weapon: Maxim gun, invented 1884 — the world's first fully automatic machine gun.",
+      "era": "Late 19th c. / WW1",
+      "nation": "United Kingdom"
+    },
+    "audio": {
+      "mechanical": true
+    },
+    "accuracy": 0.5
+  },
+  "VICKERS": {
+    "durationMs": 2000,
+    "kind": "burst",
+    "color": "#1565c0",
+    "shotCount": 12,
+    "spreadAngle": 0.02,
+    "shotLength": 16,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 13,
+      "metal": 3
+    },
+    "meta": {
+      "realRpm": 450,
+      "note": "Real weapon: British Vickers machine gun, a water-cooled Maxim derivative used from WW1 through the 1960s.",
+      "era": "WW1 / WW2",
+      "nation": "United Kingdom"
+    },
+    "audio": {
+      "mechanical": true
+    },
+    "accuracy": 0.52
+  },
+  "GATLING": {
+    "durationMs": 2800,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 90,
+    "spreadAngle": 0.035,
+    "shotLength": 20,
+    "soundClass": "gatling",
+    "damage": {
+      "flesh": 17,
+      "metal": 5
+    },
+    "meta": {
+      "realRpm": 2400,
+      "note": "Real weapon: Gatling gun, a hand-cranked multi-barrel weapon from the 1860s, ancestor of today's rotary cannons.",
+      "era": "19th century",
+      "nation": "United States"
+    },
+    "audio": {
+      "roughness": 0.2
+    },
+    "accuracy": 0.4
+  },
+  "BAR": {
+    "durationMs": 1700,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 11,
+    "spreadAngle": 0.025,
+    "shotLength": 15,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 14,
+      "metal": 3
+    },
+    "meta": {
+      "realRpm": 500,
+      "note": "Real weapon: US Browning Automatic Rifle (BAR), a squad automatic weapon used from WW1 through the Korean War.",
+      "era": "WW1 / WW2",
+      "nation": "United States"
+    },
+    "accuracy": 0.58
+  },
+  "BREN": {
+    "durationMs": 1600,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 11,
+    "spreadAngle": 0.03,
+    "shotLength": 14,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 13,
+      "metal": 3
+    },
+    "meta": {
+      "realRpm": 500,
+      "note": "Real weapon: British Bren light machine gun, standard section support weapon of WW2.",
+      "era": "WW2",
+      "nation": "United Kingdom"
+    },
+    "accuracy": 0.58
+  },
+  "STEN": {
+    "durationMs": 1400,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 10,
+    "spreadAngle": 0.06,
+    "shotLength": 12,
+    "soundClass": "smg",
+    "damage": {
+      "flesh": 9,
+      "metal": 2
+    },
+    "meta": {
+      "realRpm": 550,
+      "note": "Real weapon: British STEN submachine gun, a cheap stamped-steel design mass-produced for WW2.",
+      "era": "WW2",
+      "nation": "United Kingdom"
+    },
+    "audio": {
+      "roughness": 0.15,
+      "boomPeak": 0.5,
+      "crackDurBoost": 1.15
+    },
+    "accuracy": 0.5
+  },
+  "UZI": {
+    "durationMs": 1200,
+    "kind": "burst",
+    "color": "#1565c0",
+    "shotCount": 10,
+    "spreadAngle": 0.045,
+    "shotLength": 12,
+    "soundClass": "smg",
+    "damage": {
+      "flesh": 9,
+      "metal": 2
+    },
+    "meta": {
+      "realRpm": 600,
+      "note": "Real weapon: Israeli Uzi submachine gun, designed in the early 1950s and widely exported.",
+      "era": "Cold War",
+      "nation": "Israel"
+    },
+    "audio": {
+      "roughness": 0.16,
+      "boomPeak": 0.48,
+      "crackDurBoost": 1.1
+    },
+    "accuracy": 0.55
+  },
+  "AK": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 10,
+    "spreadAngle": 0.04,
+    "shotLength": 10,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 600,
+      "note": "Real weapon: generic AK-47/Kalashnikov-pattern rifle, the most widely produced rifle family in history.",
+      "era": "Cold War",
+      "nation": "USSR"
+    },
+    "audio": {
+      "roughness": 0.24,
+      "boomPeak": 0.55,
+      "crackDurBoost": 1.2,
+      "crackFreq": 2300,
+      "bodyFreq": 700
+    },
+    "accuracy": 0.62
+  },
+  "M4": {
+    "durationMs": 1200,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 13,
+    "spreadAngle": 0.03,
+    "shotLength": 13,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 800,
+      "note": "Real weapon: US M4 Carbine, the shortened AR-15/M16 derivative standard in the US military since the 1990s.",
+      "era": "Modern",
+      "nation": "United States"
+    },
+    "audio": {
+      "roughness": 0.14,
+      "boomPeak": 0.4,
+      "crackDurBoost": 1.05
+    },
+    "accuracy": 0.7
+  },
+  "SCAR_L": {
+    "durationMs": 1250,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 10,
+    "spreadAngle": 0.03,
+    "shotLength": 14,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 625,
+      "note": "Real weapon: FN SCAR-L, a modern modular assault rifle developed for US special operations.",
+      "era": "Modern",
+      "nation": "Belgium / United States"
+    },
+    "audio": {
+      "roughness": 0.17,
+      "boomPeak": 0.45,
+      "crackDurBoost": 1.1
+    },
+    "accuracy": 0.68
+  },
+  "MP40": {
+    "durationMs": 1400,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 9,
+    "spreadAngle": 0.06,
+    "shotLength": 12,
+    "meta": {
+      "realRpm": 500,
+      "class": "smg",
+      "note": "Real weapon: German MP40 submachine gun, widely issued to Wehrmacht squad and platoon leaders in WW2.",
+      "era": "WW2",
+      "nation": "Germany"
+    },
+    "soundClass": "smg",
+    "damage": {
+      "flesh": 10,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.14,
+      "boomPeak": 0.45,
+      "crackDurBoost": 1.1
+    },
+    "accuracy": 0.55
+  },
+  "STG44": {
+    "durationMs": 1500,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 11,
+    "spreadAngle": 0.035,
+    "shotLength": 14,
+    "meta": {
+      "realRpm": 550,
+      "class": "assault_rifle",
+      "note": "Real weapon: German Sturmgewehr 44, widely considered the first modern assault rifle.",
+      "era": "WW2",
+      "nation": "Germany"
+    },
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 16,
+      "metal": 5
+    },
+    "audio": {
+      "roughness": 0.2,
+      "boomPeak": 0.5,
+      "crackDurBoost": 1.2,
+      "bodyFreq": 750
+    },
+    "accuracy": 0.63
+  },
+  "THOMPSON": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 10,
+    "spreadAngle": 0.05,
+    "shotLength": 12,
+    "meta": {
+      "realRpm": 600,
+      "class": "smg",
+      "note": "Real weapon: US Thompson submachine gun ('Tommy gun'), iconic weapon of WW2 and the interwar era.",
+      "era": "WW1 / WW2",
+      "nation": "United States"
+    },
+    "soundClass": "smg",
+    "damage": {
+      "flesh": 11,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.2,
+      "boomPeak": 0.55,
+      "crackDurBoost": 1.25,
+      "bodyFreq": 780
+    },
+    "accuracy": 0.53
+  },
+  "PPSH41": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 16,
+    "spreadAngle": 0.05,
+    "shotLength": 12,
+    "meta": {
+      "realRpm": 900,
+      "class": "smg",
+      "note": "Real weapon: Soviet PPSh-41 submachine gun, mass-produced and issued in huge numbers on the Eastern Front.",
+      "era": "WW2",
+      "nation": "USSR"
+    },
+    "soundClass": "smg",
+    "damage": {
+      "flesh": 10,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.22,
+      "boomPeak": 0.5,
+      "crackDurBoost": 1.05
+    },
+    "accuracy": 0.5
+  },
+  "M249": {
+    "durationMs": 1800,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 18,
+    "spreadAngle": 0.025,
+    "shotLength": 16,
+    "meta": {
+      "realRpm": 750,
+      "class": "light_machine_gun",
+      "note": "Real weapon: US M249 SAW (Squad Automatic Weapon), a licensed FN Minimi variant.",
+      "era": "Modern",
+      "nation": "United States (Belgian FN design)"
+    },
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "accuracy": 0.56
+  },
+  "M762": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 11,
+    "spreadAngle": 0.035,
+    "shotLength": 13,
+    "meta": {
+      "realRpm": 650,
+      "class": "assault_rifle",
+      "note": "Representative name for a generic 7.62mm assault rifle, closest in role to AKM-pattern rifles chambered in 7.62x39mm.",
+      "era": "Modern (game-only designation)",
+      "nation": "Generic"
+    },
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "audio": {
+      "roughness": 0.22,
+      "boomPeak": 0.52,
+      "crackDurBoost": 1.15
+    },
+    "accuracy": 0.63
+  },
+  "AKM": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 10,
+    "spreadAngle": 0.04,
+    "shotLength": 13,
+    "meta": {
+      "realRpm": 600,
+      "class": "assault_rifle",
+      "note": "Real weapon: Soviet AKM, the stamped-steel modernization of the original milled AK-47.",
+      "era": "Cold War",
+      "nation": "USSR"
+    },
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "audio": {
+      "roughness": 0.22,
+      "boomPeak": 0.52,
+      "crackDurBoost": 1.15,
+      "crackFreq": 2350
+    },
+    "accuracy": 0.62
+  },
+  "PKM": {
+    "durationMs": 1800,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 16,
+    "spreadAngle": 0.025,
+    "shotLength": 18,
+    "meta": {
+      "realRpm": 650,
+      "class": "general_purpose_machine_gun",
+      "note": "Real weapon: Soviet/Russian PKM, a general-purpose machine gun still in widespread service today.",
+      "era": "Cold War",
+      "nation": "USSR"
+    },
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 16,
+      "metal": 5
+    },
+    "accuracy": 0.55
+  },
+  "SHOTGUN": {
+    "durationMs": 500,
+    "kind": "spray",
+    "color": "#ff9900",
+    "pelletCount": 10,
+    "spreadAngle": 0.35,
+    "pelletLength": 40,
+    "soundClass": "shotgun",
+    "damage": {
+      "flesh": 24,
+      "metal": 3
+    },
+    "accuracy": 0.8,
+    "meta": {
+      "note": "Generic pump/combat shotgun.",
+      "era": "Generic / Multi-era",
+      "nation": "Generic"
+    }
+  },
+  "BLUNDERBUSS": {
+    "durationMs": 600,
+    "kind": "spray",
+    "color": "#ff4444",
+    "pelletCount": 16,
+    "spreadAngle": 0.55,
+    "pelletLength": 30,
+    "soundClass": "shotgun_wide",
+    "damage": {
+      "flesh": 22,
+      "metal": 2
+    },
+    "accuracy": 0.7,
+    "meta": {
+      "note": "Real historical weapon type: a flared-muzzle smoothbore firearm used from the 17th-18th centuries for close-range volley fire.",
+      "era": "17th-18th century",
+      "nation": "Generic (Europe)"
+    }
+  },
+  "TYPE56": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 10,
+    "spreadAngle": 0.04,
+    "shotLength": 10,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 600,
+      "class": "assault_rifle",
+      "note": "Real weapon: Chinese Type 56, Norinco's licensed/reverse-engineered AK-47 copy — one of the most widely produced Kalashnikov-pattern rifles in the world, ballistically near-identical to the Soviet original.",
+      "era": "Cold War",
+      "nation": "China"
+    },
+    "audio": {
+      "roughness": 0.24,
+      "boomPeak": 0.55,
+      "crackDurBoost": 1.2
+    },
+    "accuracy": 0.62
+  },
+  "AK74": {
+    "durationMs": 1250,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 11,
+    "spreadAngle": 0.032,
+    "shotLength": 10,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 600,
+      "class": "assault_rifle",
+      "note": "Real weapon: Soviet AK-74, adopted 1974 chambered in the smaller 5.45x39mm round (900 m/s) — kept the AK's reliability while giving a flatter trajectory and lighter recoil than the AK-47/AKM's 7.62x39mm.",
+      "era": "Cold War",
+      "nation": "USSR"
+    },
+    "audio": {
+      "roughness": 0.22,
+      "boomPeak": 0.5,
+      "crackDurBoost": 1.15,
+      "crackFreq": 2400
+    },
+    "accuracy": 0.66
+  },
+  "M16A2": {
+    "durationMs": 1250,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 12,
+    "spreadAngle": 0.028,
+    "shotLength": 14,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 800,
+      "class": "assault_rifle",
+      "note": "Real weapon: US M16A2, the 1980s update of the M16 family — restricted to semi-auto/3-round burst (rather than full auto) to improve ammunition discipline, with a longer, heavier barrel than the later M4 for better long-range accuracy.",
+      "era": "Modern",
+      "nation": "United States"
+    },
+    "audio": {
+      "roughness": 0.13,
+      "boomPeak": 0.4,
+      "crackDurBoost": 1.05
+    },
+    "accuracy": 0.72
+  },
+  "G3": {
+    "durationMs": 1400,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 8,
+    "spreadAngle": 0.05,
+    "shotLength": 16,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 17,
+      "metal": 5
+    },
+    "meta": {
+      "realRpm": 500,
+      "class": "battle_rifle",
+      "note": "Real weapon: German Heckler & Koch G3, a roller-delayed blowback battle rifle firing the full-power 7.62x51mm NATO round — harder to control in automatic fire than intermediate-cartridge assault rifles, but hits noticeably harder per round.",
+      "era": "Cold War",
+      "nation": "Germany"
+    },
+    "audio": {
+      "roughness": 0.26,
+      "boomPeak": 0.6,
+      "crackDurBoost": 1.25
+    },
+    "accuracy": 0.6
+  },
+  "FAMAS": {
+    "durationMs": 1150,
+    "kind": "burst",
+    "color": "#1565c0",
+    "shotCount": 14,
+    "spreadAngle": 0.03,
+    "shotLength": 12,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 1000,
+      "class": "assault_rifle",
+      "note": "Real weapon: French FAMAS ('le Clairon'), a bullpup 5.56mm rifle with an unusually high cyclic rate that earned it the nickname 'the hairdryer'; standard French service rifle from 1978.",
+      "era": "Cold War / Modern",
+      "nation": "France"
+    },
+    "audio": {
+      "roughness": 0.15,
+      "boomPeak": 0.42,
+      "crackDurBoost": 1.05
+    },
+    "accuracy": 0.68
+  },
+  "L85A2": {
+    "durationMs": 1200,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 11,
+    "spreadAngle": 0.03,
+    "shotLength": 13,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 650,
+      "class": "assault_rifle",
+      "note": "Real weapon: British L85A2, the reliability-fixed revision (by Heckler & Koch, late 1990s) of the original SA80 bullpup that had been plagued by jamming issues in its early service life.",
+      "era": "Modern",
+      "nation": "United Kingdom"
+    },
+    "audio": {
+      "roughness": 0.15,
+      "boomPeak": 0.42,
+      "crackDurBoost": 1.08
+    },
+    "accuracy": 0.68
+  },
+  "MAADI_MISR": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 10,
+    "spreadAngle": 0.04,
+    "shotLength": 10,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 600,
+      "class": "assault_rifle",
+      "note": "Real weapon: Egyptian Misr/Maadi rifle, built at 'Factory 54' in Maadi, Cairo with direct Soviet technical assistance from the 1960s — a very close stamped-receiver copy of the Soviet AKM (documented muzzle velocity 715 m/s), still Egypt's standard service rifle today.",
+      "era": "Cold War / Modern",
+      "nation": "Egypt"
+    },
+    "audio": {
+      "roughness": 0.23,
+      "boomPeak": 0.53,
+      "crackDurBoost": 1.17
+    },
+    "accuracy": 0.6
+  },
+  "TABUK_ASSAULT": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 10,
+    "spreadAngle": 0.045,
+    "shotLength": 10,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 600,
+      "class": "assault_rifle",
+      "note": "Real weapon: Iraqi Tabuk assault rifle, the standard-rifle member of the same Zastava M70-derived family as the Tabuk sniper variant, produced at the Yugoslav-built Bir Muhammad factory from 1980 — collectors note that fit and finish declined over the Iran-Iraq war years compared to the earliest production.",
+      "era": "Cold War",
+      "nation": "Iraq"
+    },
+    "audio": {
+      "roughness": 0.24,
+      "boomPeak": 0.54,
+      "crackDurBoost": 1.18
+    },
+    "accuracy": 0.58
+  },
+  "M2_BROWNING": {
+    "durationMs": 2000,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 14,
+    "spreadAngle": 0.02,
+    "shotLength": 22,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 24,
+      "metal": 20
+    },
+    "meta": {
+      "realRpm": 550,
+      "class": "heavy_machine_gun",
+      "note": "Real weapon: US M2 Browning ('Ma Deuce'), a .50 BMG heavy machine gun in continuous service since 1933 — powerful enough to be used against light vehicles and low-flying aircraft, not just infantry.",
+      "era": "WW1-present",
+      "nation": "United States"
+    },
+    "audio": {
+      "roughness": 0.34,
+      "boomPeak": 0.6,
+      "crackDurBoost": 1.2,
+      "bodyFreq": 300
+    },
+    "accuracy": 0.5
+  },
+  "DP28": {
+    "durationMs": 1900,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 14,
+    "spreadAngle": 0.028,
+    "shotLength": 16,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 550,
+      "class": "light_machine_gun",
+      "era": "WW2",
+      "nation": "USSR",
+      "note": "Real weapon: Soviet DP-28 (Degtyaryov Pekhotny), the standard Red Army squad LMG — nicknamed the 'record player' for its distinctive flat pan magazine sitting on top of the receiver."
+    },
+    "audio": {
+      "roughness": 0.2,
+      "boomPeak": 0.5,
+      "crackDurBoost": 1.15
+    },
+    "accuracy": 0.56
+  },
+  "STEYR_AUG": {
+    "durationMs": 1250,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 12,
+    "spreadAngle": 0.028,
+    "shotLength": 13,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 720,
+      "class": "assault_rifle",
+      "era": "Cold War / Modern",
+      "nation": "Austria",
+      "note": "Real weapon: Steyr AUG, adopted by the Austrian Army in 1978 — one of the first bullpup rifles to see truly widespread service, with an integrated optical sight standard from the start rather than as an add-on."
+    },
+    "audio": {
+      "roughness": 0.16,
+      "boomPeak": 0.44,
+      "crackDurBoost": 1.08
+    },
+    "accuracy": 0.69
+  },
+  "UMP45": {
+    "durationMs": 1200,
+    "kind": "burst",
+    "color": "#1565c0",
+    "shotCount": 9,
+    "spreadAngle": 0.05,
+    "shotLength": 12,
+    "soundClass": "smg",
+    "damage": {
+      "flesh": 11,
+      "metal": 2
+    },
+    "meta": {
+      "realRpm": 600,
+      "class": "smg",
+      "era": "Modern",
+      "nation": "Germany",
+      "note": "Real weapon: Heckler & Koch UMP, introduced in 1999 as a lighter, cheaper polymer-framed successor to the MP5, most commonly fielded in .45 ACP for extra stopping power per round at the cost of magazine capacity."
+    },
+    "audio": {
+      "roughness": 0.17,
+      "boomPeak": 0.5,
+      "crackDurBoost": 1.15
+    },
+    "accuracy": 0.56
+  },
+  "FN_P90": {
+    "durationMs": 1150,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 15,
+    "spreadAngle": 0.032,
+    "shotLength": 11,
+    "soundClass": "smg",
+    "damage": {
+      "flesh": 12,
+      "metal": 3
+    },
+    "meta": {
+      "realRpm": 900,
+      "class": "personal_defense_weapon",
+      "era": "Modern",
+      "nation": "Belgium",
+      "note": "Real weapon: FN P90, designed around a dedicated 5.7x28mm cartridge specifically to defeat body armor at PDW ranges — its horizontal 50-round magazine sits flat along the top of the bullpup receiver, a very distinctive silhouette."
+    },
+    "audio": {
+      "roughness": 0.14,
+      "boomPeak": 0.42,
+      "crackDurBoost": 1.05
+    },
+    "accuracy": 0.65
+  },
+  "QBZ95": {
+    "durationMs": 1250,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 11,
+    "spreadAngle": 0.03,
+    "shotLength": 13,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "meta": {
+      "realRpm": 650,
+      "class": "assault_rifle",
+      "era": "Modern",
+      "nation": "China",
+      "note": "Real weapon: QBZ-95 (Type 95), China's standard bullpup service rifle since 1997 — chambered in a domestically-developed 5.8x42mm round rather than adopting NATO or Russian calibers, one of only a few nations to field its own unique intermediate cartridge."
+    },
+    "audio": {
+      "roughness": 0.17,
+      "boomPeak": 0.45,
+      "crackDurBoost": 1.1
+    },
+    "accuracy": 0.66
+  },
+  "TYPE99_LMG": {
+    "durationMs": 1700,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 12,
+    "spreadAngle": 0.03,
+    "shotLength": 15,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 14,
+      "metal": 3
+    },
+    "meta": {
+      "realRpm": 550,
+      "class": "light_machine_gun",
+      "era": "WW2",
+      "nation": "Japan",
+      "note": "Real weapon: Type 99, the Imperial Japanese Army's standard light machine gun, chambered in the same 7.7x58mm round as the Arisaka Type 99 rifle — some versions even mounted a bayonet lug on the barrel."
+    },
+    "audio": {
+      "roughness": 0.21,
+      "boomPeak": 0.48,
+      "crackDurBoost": 1.1
+    },
+    "accuracy": 0.55
+  },
+  "GLOCK18": {
+    "durationMs": 900,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 16,
+    "spreadAngle": 0.07,
+    "shotLength": 8,
+    "soundClass": "pistol",
+    "damage": {
+      "flesh": 10,
+      "metal": 2
+    },
+    "accuracy": 0.35,
+    "meta": {
+      "era": "Modern",
+      "nation": "Austria",
+      "realRpm": 1200,
+      "class": "machine_pistol",
+      "note": "Real weapon: Glock 18, a fully-automatic variant of the Glock 17 capable of ~1200 rounds/minute — its light pistol frame makes it extremely difficult to control in automatic fire, reflected here as by far the worst accuracy of any firearm in this dataset."
+    }
+  },
+  "CHAUCHAT": {
+    "durationMs": 2000,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 8,
+    "spreadAngle": 0.06,
+    "shotLength": 14,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 13,
+      "metal": 3
+    },
+    "accuracy": 0.4,
+    "meta": {
+      "era": "WW1",
+      "nation": "France",
+      "realRpm": 250,
+      "class": "light_machine_gun",
+      "note": "Real weapon: CSRG M1915 'Chauchat', the standard French light machine gun of WW1 — widely regarded as one of the least reliable firearms ever mass-produced, with an open-sided curved magazine that let mud and dirt jam the action constantly."
+    }
+  },
+  "LEWIS_GUN": {
+    "durationMs": 1700,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 12,
+    "spreadAngle": 0.028,
+    "shotLength": 15,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 14,
+      "metal": 3
+    },
+    "accuracy": 0.57,
+    "meta": {
+      "era": "WW1",
+      "nation": "United Kingdom",
+      "realRpm": 550,
+      "class": "light_machine_gun",
+      "note": "Real weapon: Lewis Gun, easily recognized by its distinctive top-mounted pan magazine and barrel cooling shroud — used both by infantry and, crucially, as one of the first practical aircraft-mounted machine guns of WW1."
+    }
+  },
+  "BREDA30": {
+    "durationMs": 1700,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 10,
+    "spreadAngle": 0.032,
+    "shotLength": 14,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 13,
+      "metal": 3
+    },
+    "accuracy": 0.5,
+    "meta": {
+      "era": "WW2",
+      "nation": "Italy",
+      "realRpm": 475,
+      "class": "light_machine_gun",
+      "note": "Real weapon: Breda Modello 30, Italy's standard squad LMG — its unusual fixed magazine (reloaded via stripper clips rather than a detachable box) made it slow to reload and prone to jamming in the dust of the North African campaign."
+    }
+  },
+  "BERETTA_MAB38": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 11,
+    "spreadAngle": 0.045,
+    "shotLength": 12,
+    "soundClass": "smg",
+    "damage": {
+      "flesh": 10,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.18,
+      "boomPeak": 0.48,
+      "crackDurBoost": 1.12
+    },
+    "accuracy": 0.58,
+    "meta": {
+      "era": "WW2",
+      "nation": "Italy",
+      "realRpm": 600,
+      "class": "smg",
+      "note": "Real weapon: Beretta Model 38, widely considered one of the best-made submachine guns of WW2 — precisely machined and reliable at a time when much other Italian military equipment had a reputation for the opposite."
+    }
+  },
+  "MP5": {
+    "durationMs": 1200,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 12,
+    "spreadAngle": 0.025,
+    "shotLength": 12,
+    "soundClass": "smg",
+    "damage": {
+      "flesh": 10,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.13,
+      "boomPeak": 0.42,
+      "crackDurBoost": 1.05
+    },
+    "accuracy": 0.72,
+    "meta": {
+      "era": "Modern",
+      "nation": "Germany",
+      "realRpm": 800,
+      "class": "smg",
+      "note": "Real weapon: Heckler & Koch MP5, the roller-delayed-blowback SMG that became the global standard for police and special-forces close-quarters work from the 1970s onward, famous for controllability that made it easy to keep every round on target."
+    }
+  },
+  "RPD": {
+    "durationMs": 1750,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 15,
+    "spreadAngle": 0.028,
+    "shotLength": 15,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 14,
+      "metal": 3
+    },
+    "accuracy": 0.56,
+    "meta": {
+      "era": "Cold War",
+      "nation": "USSR",
+      "realRpm": 650,
+      "class": "light_machine_gun",
+      "note": "Real weapon: RPD, a belt-fed Soviet squad LMG chambered in the same 7.62x39mm round as the AK-47, giving a rifle squad a support weapon that shared ammunition with its rifles — later succeeded by the PKM in this dataset."
+    }
+  },
+  "VZ58": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#1565c0",
+    "shotCount": 10,
+    "spreadAngle": 0.035,
+    "shotLength": 12,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "audio": {
+      "roughness": 0.22,
+      "boomPeak": 0.5,
+      "crackDurBoost": 1.15
+    },
+    "accuracy": 0.64,
+    "meta": {
+      "era": "Cold War",
+      "nation": "Czechoslovakia",
+      "realRpm": 800,
+      "class": "assault_rifle",
+      "note": "Real weapon: vz. 58, Czechoslovakia's own Cold War service rifle — despite looking like an AK-47 and firing the same 7.62x39mm round, it uses a completely different internal mechanism, one of the more commonly misidentified rifles in the world."
+    }
+  },
+  "GALIL": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 10,
+    "spreadAngle": 0.032,
+    "shotLength": 13,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "audio": {
+      "roughness": 0.21,
+      "boomPeak": 0.49,
+      "crackDurBoost": 1.12
+    },
+    "accuracy": 0.65,
+    "meta": {
+      "era": "Cold War / Modern",
+      "nation": "Israel",
+      "realRpm": 650,
+      "class": "assault_rifle",
+      "note": "Real weapon: Galil, developed after Israel's experience in the 1967 Six-Day War fighting AK-armed forces — built on a Kalashnikov-derived action combined with more Western-style ergonomics and sights."
+    }
+  },
+  "HK416": {
+    "durationMs": 1250,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 12,
+    "spreadAngle": 0.026,
+    "shotLength": 14,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "audio": {
+      "roughness": 0.13,
+      "boomPeak": 0.4,
+      "crackDurBoost": 1.05
+    },
+    "accuracy": 0.73,
+    "meta": {
+      "era": "Modern",
+      "nation": "Germany / United States",
+      "realRpm": 850,
+      "class": "assault_rifle",
+      "note": "Real weapon: HK416, an AR-15-pattern rifle re-engineered with a gas-piston system for greater reliability than the original direct-impingement design — adopted by numerous special-operations units worldwide, reflected here as the most accurate conventional assault rifle in the dataset."
+    }
+  },
+  "KORD_HMG": {
+    "durationMs": 2000,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 14,
+    "spreadAngle": 0.02,
+    "shotLength": 20,
+    "soundClass": "lmg",
+    "damage": {
+      "flesh": 26,
+      "metal": 22
+    },
+    "audio": {
+      "roughness": 0.33,
+      "boomPeak": 0.58,
+      "bodyFreq": 310
+    },
+    "accuracy": 0.52,
+    "meta": {
+      "era": "Modern",
+      "nation": "Russia",
+      "realRpm": 650,
+      "class": "heavy_machine_gun",
+      "note": "Real weapon: Kord, Russia's modern 12.7mm heavy machine gun, developed to replace the older Soviet DShK — the Russian counterpart to the American M2 Browning already in this dataset."
+    }
+  },
+  "FN_FAL": {
+    "durationMs": 1400,
+    "kind": "burst",
+    "color": "#2e7d32",
+    "shotCount": 8,
+    "spreadAngle": 0.05,
+    "shotLength": 16,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 17,
+      "metal": 5
+    },
+    "audio": {
+      "roughness": 0.25,
+      "boomPeak": 0.58,
+      "crackDurBoost": 1.22
+    },
+    "accuracy": 0.62,
+    "meta": {
+      "era": "Cold War",
+      "nation": "Belgium",
+      "realRpm": 650,
+      "class": "battle_rifle",
+      "note": "Real weapon: FN FAL, chambered in full-power 7.62x51mm NATO and adopted by over 90 countries during the Cold War — Britain and other Commonwealth nations (including India and Pakistan, who both produced licensed variants) called their version the 'SLR' (Self-Loading Rifle). South Africa's locally-built variant (the R1) and Argentina's also saw combat on opposite sides of the 1982 Falklands War, both firing the same basic design."
+    }
+  },
+  "INSAS": {
+    "durationMs": 1300,
+    "kind": "burst",
+    "color": "#ff9900",
+    "shotCount": 10,
+    "spreadAngle": 0.035,
+    "shotLength": 13,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "audio": {
+      "roughness": 0.2,
+      "boomPeak": 0.48,
+      "crackDurBoost": 1.1
+    },
+    "accuracy": 0.6,
+    "meta": {
+      "era": "Modern",
+      "nation": "India",
+      "realRpm": 650,
+      "class": "assault_rifle",
+      "note": "Real weapon: INSAS (Indian Small Arms System), India's first indigenously designed assault rifle family (rifle, LMG, and carbine), adopted in the 1990s by the Indian Ordnance Factory Board. It drew public criticism after reliability problems (including magazine cracking and oil leaking into the action in extreme cold) were reported during the 1999 Kargil War, reflected here in slightly lower accuracy than comparable modern rifles."
+    }
+  },
+  "VEKTOR_R4": {
+    "durationMs": 1250,
+    "kind": "burst",
+    "color": "#ff4444",
+    "shotCount": 10,
+    "spreadAngle": 0.03,
+    "shotLength": 13,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 15,
+      "metal": 4
+    },
+    "audio": {
+      "roughness": 0.19,
+      "boomPeak": 0.47,
+      "crackDurBoost": 1.09
+    },
+    "accuracy": 0.66,
+    "meta": {
+      "era": "Cold War / Modern",
+      "nation": "South Africa",
+      "realVelocity_ms": 980,
+      "realRpm": 700,
+      "class": "assault_rifle",
+      "note": "Real weapon: Vektor R4, a licensed derivative of the Israeli IMI Galil, adapted for African bush conditions with a heavier barrel and a larger 35-round magazine — it replaced South Africa's earlier R1 (a 7.62mm FN FAL variant) as standard service rifle from 1980."
+    }
+  },
+  "IMBEL_IA2": {
+    "durationMs": 1250,
+    "kind": "burst",
+    "color": "#f5f5f5",
+    "shotCount": 12,
+    "spreadAngle": 0.027,
+    "shotLength": 13,
+    "soundClass": "assault_rifle",
+    "damage": {
+      "flesh": 14,
+      "metal": 4
+    },
+    "audio": {
+      "roughness": 0.15,
+      "boomPeak": 0.42,
+      "crackDurBoost": 1.05
+    },
+    "accuracy": 0.71,
+    "meta": {
+      "era": "Modern",
+      "nation": "Brazil",
+      "realVelocity_ms": 780,
+      "realRpm": 810,
+      "class": "assault_rifle",
+      "note": "Real weapon: IMBEL IA2, adopted by the Brazilian Army in 2014 to replace a mixed fleet of aging FN FAL, M16A2, and HK33 rifles — the first fully modern Brazilian-designed service rifle, with Picatinny rails for optics that its FAL-derived predecessor (the MD-97) lacked."
+    }
+  }
+}

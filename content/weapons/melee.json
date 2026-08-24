@@ -1,0 +1,409 @@
+{
+  "SWORD": {
+    "durationMs": 260,
+    "kind": "slash",
+    "color": "#f5f5f5",
+    "radius": 18,
+    "soundClass": "blade",
+    "damage": {
+      "flesh": 16,
+      "metal": 2
+    },
+    "audio": {
+      "ringPitch": 1350,
+      "ringDecay": 0.24
+    },
+    "accuracy": 0.92,
+    "meta": {
+      "note": "Generic straight one-handed sword — representative of the medieval European arming sword.",
+      "era": "Medieval",
+      "nation": "Generic (Europe)"
+    }
+  },
+  "KATANA": {
+    "durationMs": 300,
+    "kind": "slash",
+    "color": "#f5f5f5",
+    "radius": 28,
+    "soundClass": "blade_thin",
+    "damage": {
+      "flesh": 19,
+      "metal": 3
+    },
+    "audio": {
+      "ringPitch": 2200,
+      "ringDecay": 0.3
+    },
+    "accuracy": 0.9,
+    "meta": {
+      "note": "Real weapon: Japanese katana, the curved single-edged sword of the samurai class, prized for its differential-hardened edge.",
+      "era": "Feudal era",
+      "nation": "Japan"
+    }
+  },
+  "AXE": {
+    "durationMs": 350,
+    "kind": "slash",
+    "color": "#f5f5f5",
+    "radius": 22,
+    "soundClass": "blade_heavy",
+    "damage": {
+      "flesh": 21,
+      "metal": 6
+    },
+    "audio": {
+      "ringPitch": 750,
+      "ringDecay": 0.14,
+      "roughness": 0.15
+    },
+    "accuracy": 0.88,
+    "meta": {
+      "note": "Generic battle axe — representative of the one-handed Viking/Frankish battle axe.",
+      "era": "Viking Age",
+      "nation": "Generic (Northern Europe)"
+    }
+  },
+  "DAGGER": {
+    "durationMs": 180,
+    "kind": "slash",
+    "color": "#f5f5f5",
+    "radius": 16,
+    "soundClass": "blade_light",
+    "damage": {
+      "flesh": 11,
+      "metal": 1
+    },
+    "audio": {
+      "ringPitch": 2500,
+      "ringDecay": 0.12
+    },
+    "accuracy": 0.9,
+    "meta": {
+      "note": "Generic combat dagger/knife, used historically as a sidearm and close-quarters backup weapon.",
+      "era": "Antiquity / Medieval",
+      "nation": "Generic"
+    }
+  },
+  "SPEAR": {
+    "durationMs": 300,
+    "kind": "slash",
+    "color": "#f5f5f5",
+    "radius": 34,
+    "thrust": true,
+    "soundClass": "blade_thrust",
+    "damage": {
+      "flesh": 17,
+      "metal": 3
+    },
+    "audio": {
+      "ringPitch": 1000,
+      "ringDecay": 0.13
+    },
+    "accuracy": 0.88,
+    "meta": {
+      "note": "Generic thrusting spear — the most common infantry weapon across most of pre-gunpowder history for its reach and low cost.",
+      "era": "Antiquity / Medieval",
+      "nation": "Generic"
+    }
+  },
+  "GLADIUS": {
+    "durationMs": 240,
+    "kind": "slash",
+    "color": "#f5f5f5",
+    "radius": 16,
+    "thrust": true,
+    "soundClass": "blade_light",
+    "damage": {
+      "flesh": 15,
+      "metal": 2
+    },
+    "audio": {
+      "ringPitch": 1450,
+      "ringDecay": 0.16
+    },
+    "accuracy": 0.9,
+    "meta": {
+      "note": "Real weapon: Roman gladius (gladius Hispaniensis) — short, double-edged sword built for tight-formation stabbing rather than wide swings; core weapon of the legions from ~200 BC.",
+      "era": "Antiquity",
+      "nation": "Rome"
+    }
+  },
+  "KILIJ": {
+    "durationMs": 320,
+    "kind": "slash",
+    "color": "#ff9900",
+    "radius": 30,
+    "soundClass": "blade_thin",
+    "damage": {
+      "flesh": 20,
+      "metal": 3
+    },
+    "audio": {
+      "ringPitch": 1900,
+      "ringDecay": 0.26
+    },
+    "accuracy": 0.87,
+    "meta": {
+      "note": "Real weapon: Ottoman kilij — a curved, single-edged cavalry sabre with a distinctive flared 'yelman' tip, used from the 15th century onward for powerful draw-cuts from horseback.",
+      "era": "Medieval-Modern (Ottoman)",
+      "nation": "Ottoman Empire / Turkey"
+    }
+  },
+  "SAIF": {
+    "durationMs": 310,
+    "kind": "slash",
+    "color": "#2e7d32",
+    "radius": 27,
+    "soundClass": "blade_thin",
+    "damage": {
+      "flesh": 18,
+      "metal": 2
+    },
+    "audio": {
+      "ringPitch": 1700,
+      "ringDecay": 0.22
+    },
+    "accuracy": 0.88,
+    "meta": {
+      "note": "Real weapon: Arabian saif — a curved single-edged sword widespread across the Arabian Peninsula and North Africa, used for slashing cuts in mounted and foot combat alike.",
+      "era": "Medieval",
+      "nation": "Arabian Peninsula / North Africa"
+    }
+  },
+  "VIKING_SWORD": {
+    "durationMs": 280,
+    "kind": "slash",
+    "color": "#1565c0",
+    "radius": 20,
+    "soundClass": "blade_heavy",
+    "damage": {
+      "flesh": 17,
+      "metal": 4
+    },
+    "audio": {
+      "ringPitch": 900,
+      "ringDecay": 0.18,
+      "roughness": 0.1
+    },
+    "accuracy": 0.86,
+    "meta": {
+      "note": "Bonus addition. Real weapon: Viking-age double-edged straight sword (e.g. Ulfberht-type blades), a costly status weapon reserved for wealthier warriors of 8th-11th century Scandinavia.",
+      "era": "Viking Age",
+      "nation": "Scandinavia"
+    }
+  },
+  "DAO": {
+    "durationMs": 300,
+    "kind": "slash",
+    "color": "#ff4444",
+    "radius": 26,
+    "soundClass": "blade_thin",
+    "damage": {
+      "flesh": 18,
+      "metal": 3
+    },
+    "audio": {
+      "ringPitch": 1800,
+      "ringDecay": 0.24
+    },
+    "accuracy": 0.87,
+    "meta": {
+      "note": "Bonus addition. Real weapon: Chinese dao — a broad single-edged sabre, one of the '18 arms' of traditional Chinese martial arts, used by infantry and cavalry for centuries.",
+      "era": "Antiquity-Modern (traditional)",
+      "nation": "China"
+    }
+  },
+  "XIPHOS": {
+    "durationMs": 230,
+    "kind": "slash",
+    "color": "#f5f5f5",
+    "radius": 15,
+    "thrust": true,
+    "soundClass": "blade_light",
+    "damage": {
+      "flesh": 14,
+      "metal": 2
+    },
+    "audio": {
+      "ringPitch": 1500,
+      "ringDecay": 0.15
+    },
+    "accuracy": 0.9,
+    "meta": {
+      "era": "Antiquity",
+      "nation": "Greece",
+      "note": "Real weapon: Greek xiphos, a short leaf-bladed sidearm carried by hoplites as a backup to the dory spear, used for close-in stabbing once formations broke down."
+    }
+  },
+  "DORY": {
+    "durationMs": 320,
+    "kind": "slash",
+    "color": "#f5f5f5",
+    "radius": 38,
+    "thrust": true,
+    "soundClass": "blade_thrust",
+    "damage": {
+      "flesh": 18,
+      "metal": 3
+    },
+    "audio": {
+      "ringPitch": 950,
+      "ringDecay": 0.12
+    },
+    "accuracy": 0.87,
+    "meta": {
+      "era": "Antiquity",
+      "nation": "Greece",
+      "note": "Real weapon: Greek dory, the primary hoplite spear (~2.5m) that formed the backbone of phalanx warfare — reach and formation discipline mattered more than the weapon's individual power."
+    }
+  },
+  "MONGOL_BOW": {
+    "durationMs": 750,
+    "kind": "tracer",
+    "color": "#ff9900",
+    "smokePuffCount": 0,
+    "lineWidth": 1.4,
+    "silent": true,
+    "soundClass": "bow",
+    "damage": {
+      "flesh": 13,
+      "metal": 1
+    },
+    "accuracy": 0.78,
+    "meta": {
+      "era": "Medieval",
+      "nation": "Mongolia",
+      "note": "Real weapon: Mongol composite recurve bow — laminated horn, wood, and sinew gave it far more power for its size than a European longbow, and it could be fired accurately from horseback at a full gallop, the technological backbone of the Mongol Empire's conquests."
+    }
+  },
+  "SHAMSHIR": {
+    "durationMs": 305,
+    "kind": "slash",
+    "color": "#ff9900",
+    "radius": 29,
+    "soundClass": "blade_thin",
+    "damage": {
+      "flesh": 19,
+      "metal": 2
+    },
+    "audio": {
+      "ringPitch": 2000,
+      "ringDecay": 0.27
+    },
+    "accuracy": 0.87,
+    "meta": {
+      "era": "Medieval",
+      "nation": "Persia",
+      "note": "Real weapon: Persian shamshir, a strongly curved single-edged sabre optimized for slashing draw-cuts from horseback — its design later influenced the Ottoman kilij and Indian talwar."
+    }
+  },
+  "NAPOLEONIC_CAVALRY_SABER": {
+    "durationMs": 310,
+    "kind": "slash",
+    "color": "#ff9900",
+    "radius": 28,
+    "soundClass": "blade_thin",
+    "damage": {
+      "flesh": 18,
+      "metal": 2
+    },
+    "audio": {
+      "ringPitch": 1750,
+      "ringDecay": 0.23
+    },
+    "accuracy": 0.85,
+    "meta": {
+      "era": "Napoleonic Wars",
+      "nation": "France",
+      "note": "Real weapon: French AN XI light cavalry sabre — a curved slashing blade suited to the charge-and-cut tactics of Napoleonic light cavalry, distinct from the straight thrusting swords of heavy cuirassier regiments."
+    }
+  },
+  "ZULU_ASSEGAI": {
+    "durationMs": 260,
+    "kind": "slash",
+    "color": "#ff4444",
+    "radius": 20,
+    "thrust": true,
+    "soundClass": "blade_thrust",
+    "damage": {
+      "flesh": 16,
+      "metal": 2
+    },
+    "audio": {
+      "ringPitch": 900,
+      "ringDecay": 0.11
+    },
+    "accuracy": 0.89,
+    "meta": {
+      "era": "19th century",
+      "nation": "Zulu Kingdom",
+      "note": "Real weapon: iklwa, the short stabbing spear credited to King Shaka Zulu, who is said to have redesigned Zulu warfare around close-quarters stabbing rather than throwing spears at range — central to Zulu victories such as Isandlwana in 1879."
+    }
+  },
+  "RAPIER": {
+    "durationMs": 270,
+    "kind": "slash",
+    "color": "#f5f5f5",
+    "radius": 32,
+    "thrust": true,
+    "soundClass": "blade_light",
+    "damage": {
+      "flesh": 14,
+      "metal": 1
+    },
+    "audio": {
+      "ringPitch": 2100,
+      "ringDecay": 0.13
+    },
+    "accuracy": 0.93,
+    "meta": {
+      "era": "Renaissance",
+      "nation": "Generic (Europe)",
+      "note": "Real weapon: the rapier, a long thin thrusting sword that dominated European civilian dueling from the 16th-17th centuries — built for precision point-work rather than the cutting power of earlier arming swords."
+    }
+  },
+  "CLAYMORE_SWORD": {
+    "durationMs": 380,
+    "kind": "slash",
+    "color": "#f5f5f5",
+    "radius": 32,
+    "soundClass": "blade_heavy",
+    "damage": {
+      "flesh": 23,
+      "metal": 7
+    },
+    "audio": {
+      "ringPitch": 650,
+      "ringDecay": 0.15,
+      "roughness": 0.16
+    },
+    "accuracy": 0.82,
+    "meta": {
+      "era": "Medieval-Renaissance",
+      "nation": "Scotland",
+      "note": "Real weapon: the Scottish claymore, a large two-handed great sword ('claidheamh-mor') used by Highland warriors — its size traded some accuracy for the heaviest cutting power of any blade in this dataset."
+    }
+  },
+  "NA_TOMAHAWK_AXE": {
+    "durationMs": 240,
+    "kind": "slash",
+    "color": "#ff9900",
+    "radius": 18,
+    "soundClass": "blade_heavy",
+    "damage": {
+      "flesh": 15,
+      "metal": 3
+    },
+    "audio": {
+      "ringPitch": 800,
+      "ringDecay": 0.13,
+      "roughness": 0.1
+    },
+    "accuracy": 0.87,
+    "meta": {
+      "era": "17th-19th century",
+      "nation": "Native American / Colonial North America",
+      "note": "Real weapon: the tomahawk, a light hand axe used across many Native American nations for both close combat and throwing, later widely adopted and traded by European colonists as well."
+    }
+  }
+}

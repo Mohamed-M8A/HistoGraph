@@ -1,0 +1,168 @@
+{
+  "C4": {
+    "durationMs": 900,
+    "kind": "explosion",
+    "color": "#ff9900",
+    "blastRadius": 45,
+    "ringCount": 4,
+    "fuseMs": 150,
+    "soundClass": "charge",
+    "damage": {
+      "flesh": 42,
+      "metal": 37
+    },
+    "audio": {
+      "roughness": 0.2
+    },
+    "accuracy": 0.97,
+    "meta": {
+      "note": "Real material: Composition C-4, a plastic explosive in wide military and demolition use since the 1950s.",
+      "era": "Modern (Cold War onward)",
+      "nation": "United States"
+    }
+  },
+  "NUKE_TACTICAL": {
+    "durationMs": 3000,
+    "kind": "nuclear",
+    "color": "#f5f5f5",
+    "cloudColor": "70,70,70",
+    "blastRadius": 90,
+    "ringCount": 5,
+    "fuseMs": 250,
+    "flashMs": 300,
+    "meta": {
+      "class": "tactical_nuclear",
+      "note": "Generic tactical (battlefield-yield) nuclear warhead class.",
+      "era": "Cold War / Modern",
+      "nation": "Generic"
+    },
+    "soundClass": "nuclear_tactical",
+    "damage": {
+      "flesh": 950,
+      "metal": 900
+    },
+    "audio": {
+      "roughness": 0.4,
+      "echo": true,
+      "crackBoost": 1.6
+    },
+    "accuracy": 0.97
+  },
+  "NUKE_STRATEGIC": {
+    "durationMs": 4200,
+    "kind": "nuclear",
+    "color": "#f5f5f5",
+    "cloudColor": "20,20,20",
+    "blastRadius": 200,
+    "ringCount": 7,
+    "fuseMs": 350,
+    "flashMs": 450,
+    "meta": {
+      "class": "strategic_nuclear",
+      "note": "Generic strategic (city-yield) thermonuclear warhead class.",
+      "era": "Cold War / Modern",
+      "nation": "Generic"
+    },
+    "soundClass": "nuclear_strategic",
+    "audio": {
+      "roughness": 0.5,
+      "echo": true,
+      "crackBoost": 2.6
+    },
+    "damage": {
+      "flesh": 1000,
+      "metal": 1000
+    },
+    "accuracy": 0.98
+  },
+  "NUKE": {
+    "durationMs": 4200,
+    "kind": "nuclear",
+    "color": "#f5f5f5",
+    "cloudColor": "20,20,20",
+    "blastRadius": 200,
+    "ringCount": 7,
+    "fuseMs": 350,
+    "flashMs": 450,
+    "meta": {
+      "class": "strategic_nuclear",
+      "alias": "NUKE_STRATEGIC",
+      "note": "Alias of NUKE_STRATEGIC — generic strategic thermonuclear warhead class.",
+      "era": "Cold War / Modern",
+      "nation": "Generic"
+    },
+    "soundClass": "nuclear_strategic",
+    "damage": {
+      "flesh": 1000,
+      "metal": 1000
+    },
+    "audio": {
+      "roughness": 0.5,
+      "echo": true,
+      "crackBoost": 2.6
+    },
+    "accuracy": 0.98
+  },
+  "LASER": {
+    "durationMs": 700,
+    "kind": "beam",
+    "color": "#2e7d32",
+    "beamWidth": 3,
+    "soundClass": "laser",
+    "damage": {
+      "flesh": 21,
+      "metal": 16
+    },
+    "audio": {
+      "roughness": 0.05
+    },
+    "accuracy": 0.9,
+    "meta": {
+      "note": "Fictional/sci-fi directed-energy rifle — no real man-portable equivalent exists; real-world laser weapon research is vehicle- or ship-mounted.",
+      "era": "Sci-fi / speculative",
+      "nation": "Fictional"
+    }
+  },
+  "PLASMA_RIFLE": {
+    "durationMs": 650,
+    "kind": "beam",
+    "color": "#1565c0",
+    "beamWidth": 4,
+    "soundClass": "plasma",
+    "damage": {
+      "flesh": 26,
+      "metal": 21
+    },
+    "audio": {
+      "roughness": 0.12
+    },
+    "accuracy": 0.85,
+    "meta": {
+      "note": "Fictional/sci-fi weapon with no real-world basis.",
+      "era": "Sci-fi / speculative",
+      "nation": "Fictional"
+    }
+  },
+  "FLAMETHROWER": {
+    "durationMs": 900,
+    "kind": "flame",
+    "color": "#ff9900",
+    "particleCount": 26,
+    "coneAngle": 0.5,
+    "range": 100,
+    "soundClass": "flamethrower",
+    "damage": {
+      "flesh": 19,
+      "metal": 2
+    },
+    "audio": {
+      "roughness": 0.08
+    },
+    "accuracy": 0.9,
+    "meta": {
+      "note": "Generic man-portable flamethrower, representative of designs like the US M2 or German Flammenwerfer 35.",
+      "era": "WW1 / WW2",
+      "nation": "Generic"
+    }
+  }
+}
