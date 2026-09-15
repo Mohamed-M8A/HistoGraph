@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Histograph | Hydro-Physics Painter</title>
+    <style>
+        body{margin:0;background:#111;color:#eee;font-family:system-ui;display:flex;height:100vh;overflow:hidden}
+        #sidebar{width:260px;background:#1a1a1a;border-left:1px solid #333;padding:20px;display:flex;flex-direction:column;gap:10px;z-index:10}
+        .tool-box{background:#222;padding:10px;border-radius:8px;border:1px solid #444}
+        h3{margin:0 0 10px;font-size:14px;color:#0af}
+        button{background:#333;color:#fff;border:1px solid #444;padding:10px;cursor:pointer;border-radius:5px;width:100%;text-align:right;margin-bottom:5px;transition:0.2s}
+        button.active{background:#0af;border-color:#fff;font-weight:bold}
+        #btn-physics{background:#242;border-color:#484}
+        #btn-physics.active{background:#0f0;color:#000}
+        input[type=range]{width:100%;accent-color:#0af}
+        canvas{cursor:crosshair;image-rendering:pixelated;flex-grow:1;object-fit:contain;background:#000}
+        .stats{font-size:11px;color:#666;margin-top:auto}
+        span{color:#0af}
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <div class="tool-box">
+        <h3>التشكيل (الارتفاع)</h3>
+        <button id="btn-up" class="active">↑ رفع الأرض (جبل)</button>
+        <button id="btn-down">↓ خفض الأرض (وادي)</button>
+    </div>
+
+    <div class="tool-box">
+        <h3>المياه (الفيزياء)</h3>
+        <button id="btn-water">💧 صب الماء</button>
+        <button id="btn-physics">▶ تشغيل محاكاة الجاذبية</button>
+    </div>
+
+    <div class="tool-box">
+        <label>حجم الفرشاة: <b id="val-size">15</b></label>
+        <input type="range" id="brush-size" min="2" max="50" value="15">
+    </div>
+
+    <button id="btn-clear" style="background:#422;">♻ مسح العالم</button>
+
+    <div class="stats">
+        المصفوفات: <span>Elevation, Logic (Water Bit)</span><br>
+        الفيزياء: <span id="status">الجاذبية متوقفة</span>
+    </div>
+</div>
+
+<canvas id="mapCanvas" width="500" height="500"></canvas>
+
+<script>
+const W = 500, H = 500, S = W * H;
+const canvas = document.getElementById('mapCanvas');
+const ctx = canvas.getContext('2d');
+const imgData = ctx.createImageData(W, H);
+
+// المصفوفات الـ 5
+const Buffers = {
+    elevation: new Int16Array(S),
+    logic:     new Uint16Array(S),
+    visuals:   new Uint16Array(S) // سنستخدمه لتخزين الميل (Slope)
+};
+
+let isDrawing = false;
+let currentTool = 'up'; 
+let physicsEnabled = false;
+let brushSize = 15;
+
+/**
+ * خوارزمية الفيزياء: تدفق الماء للأسفل
+ */
+function updateHydrology() {
+    if (!physicsEnabled) return;
+
+    // نقوم بعمل نسخة مؤقتة لبتات الماء حتى لا يتأثر الفحص بالتحريك اللحظي
+    const nextWater = new Uint8Array(S);
+
+    for (let i = 0; i < S; i++) {
+        if (!(Buffers.logic[i] & 1)) continue; // لو مفيش ماء هنا، تخطى
+
+        const x = i % W, y = Math.floor(i / W);
+        let lowestH = Buffers.elevation[i];
+        let targetIdx = i;
+
+        // فحص الجيران الـ 8 بحثاً عن أقل نقطة
+        for (let dy = -1; dy <= 1; dy++) {
+            for (let dx = -1; dx <= 1; dx++) {
+                const nx = x + dx, ny = y + dy;
+                if (nx >= 0 && nx < W && ny >= 0 && ny < H) {
+                    const ni = ny * W + nx;
+                    if (Buffers.elevation[ni] < lowestH) {
+                        lowestH = Buffers.elevation[ni];
+                        targetIdx = ni;
+                    }
+                }
+            }
+        }
+
+        // تحريك الماء للنقطة الأقل
+        if (targetIdx !== i) {
+            Buffers.logic[i] &= ~1; // امسح الماء من مكانه الحالي
+            Buffers.logic[targetIdx] |= 1; // ضعه في النقطة الأقل
+        }
+    }
+}
+
+function paint(x, y) {
+    for (let dy = -brushSize; dy < brushSize; dy++) {
+        for (let dx = -brushSize; dx < brushSize; dx++) {
+            const nx = x + dx, ny = y + dy;
+            if (nx < 0 || nx >= W || ny < 0 || ny >= H) continue;
+            if (Math.sqrt(dx*dx + dy*dy) > brushSize) continue;
+            
+            const i = ny * W + nx;
+            if (currentTool === 'up') Buffers.elevation[i] += 200;
+            if (currentTool === 'down') Buffers.elevation[i] -= 200;
+            if (currentTool === 'water') Buffers.logic[i] |= 1;
+        }
+    }
+}
+
+function render() {
+    const d = imgData.data;
+    for (let i = 0; i < S; i++) {
+        const p = i * 4;
+        const e = Buffers.elevation[i];
+        const isWater = Buffers.logic[i] & 1;
+
+        if (isWater) {
+            d[p] = 0; d[p+1] = 100; d[p+2] = 255; // أزرق للماء
+        } else {
+            // تدرج لوني بناءً على الارتفاع
+            let c = e > 10000 ? 255 : (e > 0 ? 150 : 50);
+            d[p] = c * 0.5; d[p+1] = c; d[p+2] = c * 0.3;
+        }
+        d[p+3] = 255;
+    }
+    ctx.putImageData(imgData, 0, 0);
+}
+
+// حلقة التحديث المستمر
+function loop() {
+    updateHydrology();
+    render();
+    requestAnimationFrame(loop);
+}
+
+// الأحداث
+canvas.onmousedown = (e) => { isDrawing = true; };
+window.onmouseup = () => isDrawing = false;
+canvas.onmousemove = (e) => {
+    if (!isDrawing) return;
+    const rect = canvas.getBoundingClientRect();
+    const x = Math.floor((e.clientX - rect.left) * (W / rect.width));
+    const y = Math.floor((e.clientY - rect.top) * (H / rect.height));
+    paint(x, y);
+};
+
+document.getElementById('btn-up').onclick = function() { currentTool = 'up'; setActive(this); };
+document.getElementById('btn-down').onclick = function() { currentTool = 'down'; setActive(this); };
+document.getElementById('btn-water').onclick = function() { currentTool = 'water'; setActive(this); };
+document.getElementById('btn-physics').onclick = function() {
+    physicsEnabled = !physicsEnabled;
+    this.classList.toggle('active');
+    document.getElementById('status').innerText = physicsEnabled ? 'الجاذبية تعمل' : 'الجاذبية متوقفة';
+};
+
+function setActive(btn) {
+    document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+}
+
+document.getElementById('brush-size').oninput = function() { brushSize = this.value; };
+document.getElementById('btn-clear').onclick = () => { Buffers.elevation.fill(0); Buffers.logic.fill(0); };
+
+// ابدأ
+Buffers.elevation.fill(5000); 
+loop();
+</script>
+</body>
+</html>
